@@ -1,0 +1,59 @@
+/** @type {import('tailwindcss').Config} */
+
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx}"],
+  theme: {
+    extend: {
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideInFromRight: {
+          "0%": { transform: "translateX(25%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInFromUnder: {
+          "0%": { transform: "translateY(25%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        slideInFromLeft: {
+          "0%": { transform: "translateX(-25%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInFromTop: {
+          "0%": { transform: "translateY(-25%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+      },
+
+      animation: {
+        fadeIn: "fadeIn 1s ease-out forwards 0.5s",
+        slideInFromRight: "slideInFromRight 0.5s ease-out forwards 0.5s",
+        slideInFromUnder: "slideInFromUnder 0.5s ease-out forwards 0.5s",
+        slideInFromLeft: "slideInFromLeft 0.5s ease-out forwards 0.5s",
+        slideInFromTop: "slideInFromTop 0.5s ease-out forwards 0.5s",
+      },
+
+      height: {
+        nav: "70px",
+      },
+
+      transitionDuration: {
+        md: "300ms",
+        sm: "150ms",
+        lg: "700ms",
+      },
+
+      colors: {
+        ash: "#333",
+      },
+
+      backgroundImage: {
+        slide1: "url('./assets/images/group.jpeg')",
+        slide2: "url('./assets/images/rahim-fatima.jpeg')",
+      },
+    },
+  },
+  plugins: [],
+};
