@@ -3,14 +3,41 @@
 @tailwind utilities;
 
 .swiper-button-next {
-  @apply bg-black rounded-full flex justify-center items-center h-8 w-8 p-3 pr-4 bg-opacity-30  hover:bg-opacity-60 text-white translate-x-12 group-hover:translate-x-0 transition-transform duration-sm;
+  @apply bg-black rounded-full flex justify-center items-center h-8 w-8 p-3 pr-4 bg-opacity-30  hover:bg-opacity-80 text-white translate-x-12 md:group-hover:-translate-x-8 group-hover:-translate-x-2 transition-transform duration-sm;
 
   svg {
     @apply text-white;
   }
 }
+
 .swiper-button-prev {
-  @apply bg-black rounded-full flex justify-center items-center h-8 w-8 p-3 pl-3 bg-opacity-30  hover:bg-opacity-60 text-white -translate-x-12 group-hover:translate-x-0 transition-transform duration-sm;
+  @apply bg-black rounded-full flex justify-center items-center h-8 w-8 p-3 pl-3 bg-opacity-30  hover:bg-opacity-60 text-white -translate-x-12 md:group-hover:translate-x-8 group-hover:translate-x-2  transition-transform duration-sm;
+
+  svg {
+    @apply text-white;
+  }
+}
+
+/* BLOG SWIPER NAVIGATION */
+.swiper-btn-wraper {
+  @apply flex flex-row w-[100%] justify-between items-center absolute top-[50%] left-0 right-0;
+}
+
+.swiper-btn {
+  @apply transition-all duration-sm 
+   cursor-pointer  bg-[#007aff] bg-opacity-80 shadow-lg;
+}
+
+.swiper-btn.btn-next {
+  @apply rounded-full flex justify-center items-center h-8 w-8 p-3  text-white;
+
+  svg {
+    @apply text-white;
+  }
+}
+
+.swiper-btn.btn-prev {
+  @apply rounded-full flex justify-center items-center h-8 w-8 p-3 pl-3 text-white;
 
   svg {
     @apply text-white;
@@ -22,14 +49,25 @@
 }
 
 .slide-overlay:before {
-  @apply absolute top-0 right-0 w-full h-full bg-black bg-opacity-60;
+  @apply absolute top-0 right-0 w-full h-full bg-black bg-opacity-40;
   content: "";
 }
 
 /* Swiper Link positions */
+.hero-swiper-content {
+  @apply absolute top-[70%] -translate-y-[50%] w-full md:w-96 mx-auto md:mx-0;
+}
 .position-left {
-  @apply absolute top-[70%] left-24 -translate-y-[50%] w-96;
+  @apply md:left-6;
 }
 .position-right {
-  @apply absolute top-[70%] right-24 -translate-y-[50%] w-96;
+  @apply md:right-6;
+}
+
+.small-header {
+  @apply font-thin tracking-widest uppercase;
+}
+
+.small-header-lowercase {
+  @apply font-thin tracking-widest;
 }

@@ -10,29 +10,29 @@ module.exports = {
           "100%": { opacity: "1" },
         },
         slideInFromRight: {
-          "0%": { transform: "translateX(25%)", opacity: "0" },
+          "0%": { transform: "translateX(15px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
         slideInFromUnder: {
-          "0%": { transform: "translateY(25%)", opacity: "0" },
+          "0%": { transform: "translateY(15px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         slideInFromLeft: {
-          "0%": { transform: "translateX(-25%)", opacity: "0" },
+          "0%": { transform: "translateX(-15px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
         slideInFromTop: {
-          "0%": { transform: "translateY(-25%)", opacity: "0" },
+          "0%": { transform: "translateY(-15px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
       },
 
       animation: {
         fadeIn: "fadeIn 1s ease-out forwards 0.5s",
-        slideInFromRight: "slideInFromRight 0.5s ease-out forwards 0.5s",
-        slideInFromUnder: "slideInFromUnder 0.5s ease-out forwards 0.5s",
-        slideInFromLeft: "slideInFromLeft 0.5s ease-out forwards 0.5s",
-        slideInFromTop: "slideInFromTop 0.5s ease-out forwards 0.5s",
+        slideInFromRight: "slideInFromRight 0.7s ease-out forwards 0.5s",
+        slideInFromUnder: "slideInFromUnder 0.7s ease-out forwards 0.5s",
+        slideInFromLeft: "slideInFromLeft 0.7s ease-out forwards 0.5s",
+        slideInFromTop: "slideInFromTop 0.7s ease-out forwards 0.5s",
       },
 
       height: {
@@ -43,10 +43,12 @@ module.exports = {
         md: "300ms",
         sm: "150ms",
         lg: "700ms",
+        xl: "1000ms",
       },
 
       colors: {
-        ash: "#333",
+        ash: "#444",
+        gray: "#e5e7eb",
       },
 
       backgroundImage: {

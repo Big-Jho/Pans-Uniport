@@ -1,10 +1,12 @@
 import React from "react";
 
-function NavLinks({ children }) {
+function NavLinks({ children, shade }) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h4 className="text-base font-normal text-white">{children}</h4>
-      <div className="h-0.5 w-0 bg-white group-hover:w-full transition-width duration-md"></div>
+    <div className="flex flex-col items-center justify-center space-y-1">
+      <h4 className={`text-base font-normal text-${shade}`}>{children}</h4>
+      <div
+        className={`h-0.5 w-0 bg-${shade}  group-hover:w-full transition-width duration-md`}
+      ></div>
     </div>
   );
 }

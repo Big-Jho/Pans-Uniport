@@ -23,24 +23,18 @@ function SwiperNavigation() {
   const swiper = useSwiper();
 
   return (
-    <div>
-      <div
-        className="swiper-button-prev swiper-btn"
-        onClick={() => swiper.slidePrev()}
-      >
+    <div className="hidden md:block">
+      <div className="swiper-button-prev " onClick={() => swiper.slidePrev()}>
         <FontAwesomeIcon icon={faChevronLeft} />
       </div>
-      <div
-        className="swiper-button-next swiper-btn"
-        onClick={() => swiper.slideNext()}
-      >
+      <div className="swiper-button-next " onClick={() => swiper.slideNext()}>
         <FontAwesomeIcon icon={faChevronRight} />
       </div>
     </div>
   );
 }
 
-function SwiperComponent() {
+function HeroSwiper() {
   const swiperRef = useRef(null);
 
   const onSwiperInit = (swiper) => {
@@ -61,33 +55,35 @@ function SwiperComponent() {
   };
 
   return (
-    <Swiper
-      modules={[Pagination, A11y, Autoplay]}
-      spaceBetween={0}
-      slidesPerView={1}
-      autoplay={{ delay: 5000, disableOnInteraction: false, speed: 1000 }}
-      loop={true}
-      pagination={{ clickable: true }}
-      onSwiper={onSwiperInit}
-      className="group"
-      // onSlideChange={}
-    >
-      <SwiperSlide className="w-screen ">
-        <Slide1 />
-      </SwiperSlide>
-      <SwiperSlide className="w-screen">
-        <Slide2 />
-      </SwiperSlide>
-      <SwiperSlide className="w-screen">
-        <Slide1 />
-      </SwiperSlide>
-      <SwiperSlide className="w-screen">
-        <Slide1 />
-      </SwiperSlide>
+    <section className="h-[calc(100vh-2rem)] bg-red-200">
+      <Swiper
+        modules={[Pagination, A11y, Autoplay]}
+        spaceBetween={0}
+        slidesPerView={1}
+        autoplay={{ delay: 3000, disableOnInteraction: false, speed: 1000 }}
+        loop={true}
+        pagination={{ clickable: true }}
+        onSwiper={onSwiperInit}
+        className="group"
+        // onSlideChange={}
+      >
+        <SwiperSlide className="w-screen ">
+          <Slide1 />
+        </SwiperSlide>
+        <SwiperSlide className="w-screen">
+          <Slide2 />
+        </SwiperSlide>
+        <SwiperSlide className="w-screen">
+          <Slide1 />
+        </SwiperSlide>
+        <SwiperSlide className="w-screen">
+          <Slide1 />
+        </SwiperSlide>
 
-      <SwiperNavigation />
-    </Swiper>
+        <SwiperNavigation />
+      </Swiper>
+    </section>
   );
 }
 
-export default SwiperComponent;
+export default HeroSwiper;

@@ -1,0 +1,81 @@
+import React from "react";
+import Container from "../shared/Container";
+import NavLinks from "../NavLinks";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { ScrollReveal } from "../ScrollReveal";
+
+function Footer() {
+  return (
+    <section className="my-24 space-y-16">
+      <section>
+        {/* Footer Link Section  */}
+        <ScrollReveal type="fromBottom">
+          <Container className="flex flex-col items-center space-y-12 md:space-y-0 md:flex-row md:justify-between">
+            <div className="w-full md:w-1/2 ">
+              <h4 className="small-header text-ash pb-4">Pans Uniport</h4>
+              <div className="bg-white flex flex-col justify-center items-start space-y-4">
+                <Link to="/" className="group inline-block">
+                  <NavLinks color="black" shade="ash">
+                    Home
+                  </NavLinks>
+                </Link>
+                <Link to="/about" className="group inline-block">
+                  <NavLinks color="black" shade="ash">
+                    About Us
+                  </NavLinks>
+                </Link>
+                <Link to="/contact" className="group inline-block">
+                  <NavLinks color="black" shade="ash">
+                    Contact
+                  </NavLinks>
+                </Link>
+                <Link to="/pharm-writers" className="group inline-block">
+                  <NavLinks color="black" shade="ash">
+                    PharmWritters
+                  </NavLinks>
+                </Link>
+              </div>
+            </div>
+
+            {/* ---------- */}
+            <div className="flex flex-col items-center w-1/2">
+              <h4 className="small-header text-ash pb-4">Follow us</h4>
+              <div className="bg-white flex flex-row justify-center items-center space-x-6">
+                <Link to="/about" className="group inline-block">
+                  <FontAwesomeIcon icon={faInstagram} size="lg" />
+                </Link>
+                <Link to="/about" className="group inline-block">
+                  <FontAwesomeIcon icon={faTwitter} size="lg" />
+                </Link>
+              </div>
+            </div>
+          </Container>
+        </ScrollReveal>
+      </section>
+      <section>
+        <ScrollReveal type="fromBottom">
+          <Container className="flex flex-col justify-center items-center space-y-8">
+            <h2 className="text-4xl">Sign up now</h2>
+            <p className="text-ash">
+              Be the first to know about our new posts and exclusive gist.
+            </p>
+            <form className="flex flex-col space-x-0 space-y-3 md:flex-row md:space-x-3 md:space-y-0 w-full justify-center">
+              <input
+                type="text"
+                className="border-2 p-3 px-6 text-ash w-full md:max-w-sm focus:outline-none"
+                placeholder="Your Email Address"
+              />
+              <button className="p-3 px-6 bg-black text-white  hover:bg-opacity-80">
+                Sign up
+              </button>
+            </form>
+          </Container>
+        </ScrollReveal>
+      </section>
+    </section>
+  );
+}
+
+export default Footer;
