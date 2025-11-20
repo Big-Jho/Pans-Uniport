@@ -47,13 +47,14 @@ module.exports = {
       },
 
       colors: {
-        ash: "#444",
+        ash: "#333",
         gray: "#e5e7eb",
       },
 
       backgroundImage: {
         slide1: "url('./assets/images/group.jpeg')",
         slide2: "url('./assets/images/rahim-fatima.jpeg')",
+        blackBg: "url('./assets/images/black-background.jpg')",
       },
     },
   },

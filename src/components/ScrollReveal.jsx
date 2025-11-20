@@ -1,6 +1,6 @@
 import useInView from "./useInView";
 
-export function ScrollReveal({ children, type, className }) {
+function ScrollReveal({ children, type, className }) {
   const [ref, inView] = useInView();
 
   const checkClass = () => {
@@ -34,3 +34,5 @@ export function ScrollReveal({ children, type, className }) {
     </div>
   );
 }
+
+export default ScrollReveal;

@@ -4,7 +4,7 @@ import NavLinks from "../NavLinks";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { ScrollReveal } from "../ScrollReveal";
+import ScrollReveal from "../ScrollReveal";
 
 function Footer() {
   return (
@@ -56,21 +56,24 @@ function Footer() {
       </section>
       <section>
         <ScrollReveal type="fromBottom">
-          <Container className="flex flex-col justify-center items-center space-y-8">
-            <h2 className="text-4xl">Sign up now</h2>
-            <p className="text-ash">
-              Be the first to know about our new posts and exclusive gist.
-            </p>
-            <form className="flex flex-col space-x-0 space-y-3 md:flex-row md:space-x-3 md:space-y-0 w-full justify-center">
-              <input
-                type="text"
-                className="border-2 p-3 px-6 text-ash w-full md:max-w-sm focus:outline-none"
-                placeholder="Your Email Address"
-              />
-              <button className="p-3 px-6 bg-black text-white  hover:bg-opacity-80">
-                Sign up
-              </button>
-            </form>
+          <Container className="">
+            <div className="flex flex-col justify-center items-center space-y-8 max-w-md mx-auto">
+              <h2 className="text-4xl">Sign up now</h2>
+              <p className="text-ash font-thin">
+                Be the first to know about our new posts and exclusive gist.
+              </p>
+
+              <form className="flex flex-col space-x-0 space-y-3 md:flex-row md:space-x-1 md:space-y-0  justify-center w-full">
+                <input
+                  type="text"
+                  className="border border-ash p-3 px-6 text-ash w-full  rounded-md rounded-b-none md:rounded-md md:rounded-r-none focus:outline-none md:text-left text-center font-thin"
+                  placeholder="Your Email Address"
+                />
+                <button className="p-3 px-6 bg-black text-white min-w-fit rounded-md rounded-t-none md:rounded-md md:rounded-l-none hover:bg-opacity-80">
+                  Sign up
+                </button>
+              </form>
+            </div>
           </Container>
         </ScrollReveal>
       </section>

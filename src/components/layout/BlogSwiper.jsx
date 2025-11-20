@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiper } from "swiper/react";
-import { ScrollReveal } from "../ScrollReveal";
+import ScrollReveal from "../ScrollReveal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";

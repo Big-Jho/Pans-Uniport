@@ -47,8 +47,14 @@ function Navbar() {
         </Container>
       </section>
 
-      <section className={`w-full ${scrolled ? "bg-white" : "bg-transparent"}`}>
-        <Container>
+      <section
+        className={`w-full ${
+          scrolled
+            ? "bg-white border-b border-gray shadow-lg"
+            : "bg-transparent"
+        }`}
+      >
+        <Container className="py-0 pt-2">
           <div className="flex flex-row justify-between items-center">
             {/* Hamburger */}
             <div className="lg:hidden">
@@ -84,7 +90,7 @@ function Navbar() {
               <img
                 src={PansLogo}
                 alt="PANS-logo"
-                className="w-[50px] md:w-[70px]"
+                className={`w-[50px] md:w-[50px] ${scrolled && "w-[30px]"}`}
               />
             </Link>
 

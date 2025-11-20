@@ -25,7 +25,7 @@
 
 .swiper-btn {
   @apply transition-all duration-sm 
-   cursor-pointer  bg-[#007aff] bg-opacity-80 shadow-lg;
+   cursor-pointer  bg-ash bg-opacity-80 shadow-lg;
 }
 
 .swiper-btn.btn-next {
