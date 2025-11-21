@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-pagination-bottom: 0;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet {
+  @apply shadow-lg;
+}
+
 .swiper-button-next {
   @apply bg-black rounded-full flex justify-center items-center h-8 w-8 p-3 pr-4 bg-opacity-30  hover:bg-opacity-80 text-white translate-x-12 md:group-hover:-translate-x-8 group-hover:-translate-x-2 transition-transform duration-sm;
 
@@ -71,3 +85,14 @@
 .small-header-lowercase {
   @apply font-thin tracking-widest;
 }
+
+/* Recruitment Form */
+/* #recruitmentForm input::placeholder {
+  @apply focus:bg-red-500 focus:text-white p-2 w-fit  
+  focus:absolute focus:-top-4 focus:left-0
+  focus:z-40 -translate-y-6;
+} */
+
+/* #recruitmentForm input::placeholder {
+  @apply focus:bg-black ;
+} */

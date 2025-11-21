@@ -1,12 +1,20 @@
-import React from "react";
+import { useEffect } from "react";
+import NavCombo from "../layout/NavCombo";
+import Footer from "../layout/Footer";
 import Container from "../shared/Container";
-// import BlackBg from "../../assets/images/black-background.jpg"
 import Tag from "../shared/Tag";
 import ScrollReveal from "../ScrollReveal";
+import RecruitmentForm from "../layout/RecruitmentForm";
 
 function PharmWriters() {
+  const scrollTop = () => {
+    window.scroll(0, 0);
+  };
+  useEffect(() => scrollTop(), []);
+
   return (
-    <>
+    <main>
+      <NavCombo />
       <section
         className="bg-blackBg bg-top bg-no-repeat bg-contain"
         style={{ backgroundSize: "100% 70%" }}
@@ -31,11 +39,14 @@ function PharmWriters() {
         </Container>
         <Container>
           <ScrollReveal type="fromBottom">
+            {/* @todo Photo gallery */}
             <div className="grid p-2 bg-white h-[70vh] w-full"></div>
           </ScrollReveal>
         </Container>
       </section>
-    </>
+      <RecruitmentForm />
+      <Footer />
+    </main>
   );
 }
 

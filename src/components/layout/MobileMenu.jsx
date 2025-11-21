@@ -1,9 +1,7 @@
 import { useContext } from "react";
 import NavigationContext from "../../context/NavigationContext";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-
 import { Link } from "react-router-dom";
 import Container from "../shared/Container";
 
@@ -19,7 +17,6 @@ function MobileMenu() {
       <div className={` bg-white h-full max-w-sm  shadow-xl  `}>
         <Container className="relative">
           {/* Hamburger in MobileMenu */}
-
           <div className="absolute top-6 right-6 rounded-full  bg-ash text-center">
             <div className="w-8 h-8 flex justify-center items-center text-center hover:rotate-90 transition duration-sm text-white">
               <FontAwesomeIcon
@@ -32,6 +29,7 @@ function MobileMenu() {
 
           <div className="flex flex-col  items-start space-y-8 pl-12 my-12 min-h-screen">
             <Link
+              onClick={() => toggleMenu(false)}
               to="/blog"
               className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
             >
@@ -39,6 +37,7 @@ function MobileMenu() {
               <span>Blog</span>
             </Link>
             <Link
+              onClick={() => toggleMenu(false)}
               to="/pharm-writers"
               className="group flex flex-row items-center justify-center uppercase space-x-2  hover:translate-x-2 duration-300"
             >
@@ -46,6 +45,7 @@ function MobileMenu() {
               <span>PharmWritters</span>
             </Link>
             <Link
+              onClick={() => toggleMenu(false)}
               to="/pharmschlife"
               className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
             >
@@ -53,6 +53,7 @@ function MobileMenu() {
               <span>PharmSchool Life </span>
             </Link>
             <Link
+              onClick={() => toggleMenu(false)}
               to="/news"
               className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
             >
@@ -60,6 +61,7 @@ function MobileMenu() {
               <span>News</span>
             </Link>
             <Link
+              onClick={() => toggleMenu(false)}
               to="/story"
               className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
             >
@@ -67,6 +69,7 @@ function MobileMenu() {
               <span>Story</span>
             </Link>
             <Link
+              onClick={() => toggleMenu(false)}
               to="/creativity"
               className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
             >
@@ -74,6 +77,7 @@ function MobileMenu() {
               <span>Creativity</span>
             </Link>
             <Link
+              onClick={() => toggleMenu(false)}
               to="/opinions"
               className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
             >

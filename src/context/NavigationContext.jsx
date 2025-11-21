@@ -25,8 +25,11 @@ export const NavigationProvider = ({ children }) => {
 
   const handleScroll = () => {
     const isScrolled = window.scrollY > 70;
-    console.log(isScrolled ? "Page Scrolled" : "Not Scrolled");
     setScrolled(isScrolled);
+  };
+
+  const scrollTop = () => {
+    window.scroll(0, 0);
   };
 
   useEffect(() => {
@@ -44,6 +47,7 @@ export const NavigationProvider = ({ children }) => {
         toggleSwiper,
         scrolled,
         handleScroll,
+        scrollTop,
       }}
     >
       {children}

@@ -1,10 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
+import NavCombo from "../layout/NavCombo";
+import Footer from "../layout/Footer";
 
 function PharmSchLife() {
+  const scrollTop = () => {
+    window.scroll(0, 0);
+  };
+  useEffect(() => scrollTop(), []);
+
   return (
-    <div>
-      <h1 className="text-9xl font-bold text-center ">PHARM SCHOOL LIFE</h1>
-    </div>
+    <main>
+      <NavCombo />
+      <h1 className="text-9xl font-bold text-center mt-44">
+        PHARM SCHOOL LIFE
+      </h1>
+      <Footer />
+    </main>
   );
 }
 

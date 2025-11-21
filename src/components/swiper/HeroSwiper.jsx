@@ -23,7 +23,7 @@ function SwiperNavigation() {
   const swiper = useSwiper();
 
   return (
-    <div className="hidden md:block">
+    <div className>
       <div className="swiper-button-prev " onClick={() => swiper.slidePrev()}>
         <FontAwesomeIcon icon={faChevronLeft} />
       </div>
@@ -79,8 +79,9 @@ function HeroSwiper() {
         <SwiperSlide className="w-screen">
           <Slide1 />
         </SwiperSlide>
-
-        <SwiperNavigation />
+        <div className="hidden md:block">
+          <SwiperNavigation />
+        </div>
       </Swiper>
     </section>
   );

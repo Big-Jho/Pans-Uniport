@@ -20,7 +20,7 @@ function SwiperNavigation() {
   const swiper = useSwiper();
 
   return (
-    <div className="swiper-btn-wraper hidden md:block">
+    <div className="swiper-btn-wraper">
       <div
         className="btn-prev swiper-btn swiper-button-prev"
         onClick={() => swiper.slidePrev()}
@@ -93,7 +93,7 @@ function BlogSwiper() {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="space-y-2 ">
+              <div className="space-y-2 pb-6">
                 <h4 className="small-header">opinion</h4>
                 <p className="text-xl text-black">
                   Think Health, Think Pharmacist: Pharmacist as a primary health
@@ -105,7 +105,7 @@ function BlogSwiper() {
 
             {/* Slide 2 */}
             <SwiperSlide>
-              <div className="space-y-2">
+              <div className="space-y-2 pb-6">
                 <h4 className="small-header">opinion</h4>
                 <p className="text-xl text-black">
                   Think Health, Think Pharmacist: Pharmacist as a primary health
@@ -117,7 +117,7 @@ function BlogSwiper() {
 
             {/* Slide 3 */}
             <SwiperSlide>
-              <div className="space-y-2 ">
+              <div className="space-y-2 pb-6">
                 <h4 className="small-header">opinion</h4>
                 <p className="text-xl text-black">
                   Think Health, Think Pharmacist: Pharmacist as a primary health
@@ -129,7 +129,7 @@ function BlogSwiper() {
 
             {/* Slide 4 */}
             <SwiperSlide>
-              <div className="space-y-2 ">
+              <div className="space-y-2 pb-6">
                 <h4 className="small-header">opinion</h4>
                 <p className="text-xl text-black">
                   Think Health, Think Pharmacist: Pharmacist as a primary health
@@ -141,7 +141,7 @@ function BlogSwiper() {
 
             {/* Slide 5 */}
             <SwiperSlide>
-              <div className="space-y-2 ">
+              <div className="space-y-2 pb-6">
                 <h4 className="small-header">opinion</h4>
                 <p className="text-xl text-black">
                   Think Health, Think Pharmacist: Pharmacist as a primary health
@@ -153,7 +153,7 @@ function BlogSwiper() {
 
             {/* Slide 6 */}
             <SwiperSlide>
-              <div className="space-y-2 ">
+              <div className="space-y-2 pb-6">
                 <h4 className="small-header">opinion</h4>
                 <p className="text-xl text-black">
                   Think Health, Think Pharmacist: Pharmacist as a primary health
@@ -162,8 +162,9 @@ function BlogSwiper() {
                 <p className="small-header-lowercase">October 7, 2025</p>
               </div>
             </SwiperSlide>
-
-            <SwiperNavigation />
+            <div className="hidden md:block">
+              <SwiperNavigation />
+            </div>
           </Swiper>
         </Container>
       </ScrollReveal>
