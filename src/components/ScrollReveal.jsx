@@ -25,7 +25,7 @@ function ScrollReveal({ children, type, className }) {
     <div
       ref={ref}
       className={`
-        transition-xl duration-xl ease-out w-full delay-[1000]
+        transition-xl duration-xl ease-out w-full delay-lg
         ${inView ? checkClass()[1] : checkClass()[0]}
         ${className}
       `}

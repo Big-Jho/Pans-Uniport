@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Fatima",
+    "nickname": "Fatty",
+    "phone": "+2349035603978",
+    "email": "frahim035@uniport.edu.ng",
+    "position": "Editor-in-Chief",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921112/IMG_3050_ymmfho.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "http://www.linkedin.com/in/fatima-rahim-585917252"
+    }
+  },
+  {
+    "id": 2,
+    "name": "OKORIE CHARLES CHIBUEZE",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Assistant Editor-in-chief",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921211/IMG_3051_jzaeza.jpg",
+    "socials": {
+      "facebook": "https://www.facebook.com/share/17PvwWKGMm/",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/okorie_charles_chibueze",
+      "linkedin": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Dada Joseph",
+    "nickname": "Jho-Tech",
+    "phone": "+2348131611652",
+    "email": "jdada070@uniport.edu.ng",
+    "position": "Web Developer",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763878183/IMG_0487_2_snzemk.heic",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  }
+]

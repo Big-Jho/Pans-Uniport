@@ -82,6 +82,10 @@ html {
   @apply font-thin tracking-widest uppercase;
 }
 
+.big-header {
+  @apply my-10 text-3xl;
+}
+
 .small-header-lowercase {
   @apply font-thin tracking-widest;
 }
@@ -96,3 +100,9 @@ html {
 /* #recruitmentForm input::placeholder {
   @apply focus:bg-black ;
 } */
+
+#pharmwriters #hero {
+  background-size: 100% 50%;
+}
+
+@media (max-width: );

@@ -78,9 +78,9 @@ function RecruitmentForm() {
   };
 
   return (
-    <section className="bg-gray bg-opacity-60 py-8" id="recruitmentForm">
+    <section className="bg-gray bg-opacity-40 py-8" id="recruitmentForm">
       <Container>
-        <ScrollReveal type="fromBottom">
+        <ScrollReveal type="fromRight">
           <form className="w-full xl:max-w-2xl mx-auto" onSubmit={handleSubmit}>
             <h4 className="text-center small-header text-blue-500">
               recruitment
@@ -160,6 +160,27 @@ function RecruitmentForm() {
             </div>
           </form>
         </ScrollReveal>
+      </Container>
+      <Container>
+        <hr className="text-gray w-full xl:max-w-2xl mx-auto my-10" />
+        <div className="flex flex-col md:flex-row md:justify-between items-center w-full xl:max-w-2xl mx-auto space-y-10 md:space-y-0">
+          <ScrollReveal type="fromLeft" className="w-fit">
+            <div>
+              <h4 className="text-2xl">Our Board</h4>
+              <p className="mt-2 md:mt-6 text-ash">PANS Secretariat</p>
+              <p className="text-ash">Faculty of Pharmaceutical Sciences</p>
+              <p className="text-ash">UNIPORT, Rivers, Nigeria</p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal type="fromRight" className="w-fit">
+            <div>
+              <h4 className="text-2xl">Get in Touch</h4>
+              <p className="mt-2 md:mt-6 text-ash">+234 903 560 3978</p>
+              <p className="text-ash">+234 813 161 1652</p>
+              <p className="text-ash">pansuniporteditorials@gmail.com</p>
+            </div>
+          </ScrollReveal>
+        </div>
       </Container>
     </section>
   );
