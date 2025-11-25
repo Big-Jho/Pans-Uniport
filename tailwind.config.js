@@ -53,10 +53,11 @@ module.exports = {
 
       backgroundImage: {
         slide1: "url('./assets/images/group.jpeg')",
-        slide2: "url('./assets/images/rahim-fatima.jpeg')",
+        slide2: "url('./assets/images/fatima-joseph.jpeg')",
         blackBg: "url('./assets/images/black-background.jpg')",
         blackBgSm: "url('./assets/images/black-background-sm.jpg')",
         blackBgMd: "url('./assets/images/black-background-md.jpg')",
+        fatimaBg: "url('./assets/images/rahim-fatima.jpeg')",
       },
     },
   },

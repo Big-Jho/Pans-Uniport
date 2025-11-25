@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "name": "OKORIE CHARLES CHIBUEZE",
+    "name": "Okorie Charles Chibueze",
     "nickname": "",
     "phone": "",
     "email": "",
@@ -38,10 +38,11 @@
     "position": "Web Developer",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763878183/IMG_0487_2_snzemk.heic",
     "socials": {
-      "facebook": "",
-      "twitter": "",
-      "instagram": "",
-      "linkedin": ""
+      "facebook": "https://www.facebook.com/austin.bablon",
+      "twitter": "https://x.com/Big__Jho",
+      "instagram": "https://www.instagram.com/callme_bigjho/",
+      "linkedin": "https://www.linkedin.com/in/dada-joseph-986910277/",
+      "tiktok": "https://www.tiktok.com/@big_jho"
     }
   }
 ]

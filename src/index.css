@@ -79,7 +79,7 @@ html {
 }
 
 .small-header {
-  @apply font-thin tracking-widest uppercase;
+  @apply font-light tracking-widest uppercase;
 }
 
 .big-header {
@@ -101,8 +101,8 @@ html {
   @apply focus:bg-black ;
 } */
 
-#pharmwriters #hero {
-  background-size: 100% 50%;
+/* #pharmwriters #hero {
+  background-size: 100% ;
 }
 
-@media (max-width: );
+@media (max-width: ); */

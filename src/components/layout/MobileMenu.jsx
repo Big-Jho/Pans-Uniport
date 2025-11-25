@@ -27,62 +27,55 @@ function MobileMenu() {
             </div>
           </div>
 
-          <div className="flex flex-col  items-start space-y-8 pl-12 my-12 min-h-screen">
+          <div className="flex flex-col  items-center gap-6 -pl-4 my-12 min-h-screen">
             <Link
               onClick={() => toggleMenu(false)}
               to="/blog"
-              className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>Blog</span>
+              Blog
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/pharm-writers"
-              className="group flex flex-row items-center justify-center uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6  uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>PharmWritters</span>
+              PharmWritters
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/pharmschlife"
-              className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>PharmSchool Life </span>
+              PharmSchool Life
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/news"
-              className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>News</span>
+              News
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/story"
-              className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>Story</span>
+              Story
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/creativity"
-              className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>Creativity</span>
+              Creativity
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/opinions"
-              className="flex flex-row items-center justify-center group uppercase space-x-2  hover:translate-x-2 duration-300"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              <div className="w-1 h-8 bg-gray-300 block"></div>
-              <span>Opinions</span>
+              Opinions
             </Link>
           </div>
         </Container>

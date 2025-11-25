@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-function Navbar() {
+function Navbar({ navColor }) {
   const { menuVisibility, toggleMenu, scrolled } =
     useContext(NavigationContext);
 
@@ -49,7 +49,7 @@ function Navbar() {
 
       <section
         className={`w-full ${
-          scrolled
+          scrolled || navColor === "white"
             ? "bg-white border-b border-gray shadow-lg"
             : "bg-transparent"
         }`}
@@ -63,7 +63,7 @@ function Navbar() {
                 size="xl"
                 onClick={toggleMenu}
                 className={`active:rotate-90 transition duration-sm ${
-                  scrolled ? "text-black" : "text-white"
+                  scrolled || navColor === "white" ? "text-black" : "text-white"
                 }`}
               />
             </div>
@@ -71,15 +71,23 @@ function Navbar() {
             {/* First Menu Links */}
             <div className="hidden lg:flex flex-row space-x-8 justify-between items-center ">
               <Link to="/blog" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>Blog</NavLinks>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
+                  Blog
+                </NavLinks>
               </Link>
               <Link to="/pharm-writers" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
                   PharmWritters
                 </NavLinks>
               </Link>
               <Link to="/pharmschlife" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
                   PharmSchool Life
                 </NavLinks>
               </Link>
@@ -97,20 +105,32 @@ function Navbar() {
             {/* Second set of Links */}
             <div className="hidden lg:flex flex-row space-x-8 justify-between items-center">
               <Link to="/news" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>News</NavLinks>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
+                  News
+                </NavLinks>
               </Link>
               <Link to="/story" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>Story</NavLinks>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
+                  Story
+                </NavLinks>
               </Link>
 
               <Link to="/creativity" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
                   Creativity
                 </NavLinks>
               </Link>
 
               <Link to="/opinions" className="group inline-block">
-                <NavLinks shade={scrolled ? "black" : "white"}>
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
                   Opinions
                 </NavLinks>
               </Link>

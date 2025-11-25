@@ -16,26 +16,26 @@ function Footer() {
           <ScrollReveal type="fromBottom">
             <Container className="flex flex-col items-center space-y-12 md:space-y-0 md:flex-row md:justify-between md:items-start">
               <div className="w-full md:w-1/2 ">
-                <h4 className="small-header text-ash pb-4">Pans Uniport</h4>
+                <h4 className="small-header text-black pb-4">Pans Uniport</h4>
                 <div className="bg-white flex flex-col justify-center items-start space-y-4">
                   <Link to="/" className="group inline-block">
-                    <NavLinks color="black" shade="ash">
+                    <NavLinks color="black" shade="ash" className="font-light">
                       Home
                     </NavLinks>
                   </Link>
                   <Link to="/about" className="group inline-block">
-                    <NavLinks color="black" shade="ash">
+                    <NavLinks color="black" shade="ash" className="font-light">
                       About Us
                     </NavLinks>
                   </Link>
                   <Link to="/contact" className="group inline-block">
-                    <NavLinks color="black" shade="ash">
+                    <NavLinks color="black" shade="ash" className="font-light">
                       Contact
                     </NavLinks>
                   </Link>
                   <Link to="/pharm-writers" className="group inline-block">
-                    <NavLinks color="black" shade="ash">
-                      PharmWritters
+                    <NavLinks color="black" shade="ash" className="font-light">
+                      PharmWriters
                     </NavLinks>
                   </Link>
                 </div>

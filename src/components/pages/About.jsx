@@ -98,12 +98,12 @@ function About() {
       <section className="bg-white  py-8">
         <Container>
           <ScrollReveal type="fromBottom">
-            <div className="w-full xl:max-w-2xl mx-auto">
-              <h2 className="big-header">The Team</h2>
-              <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-4 justify-center">
+            <div className="w-full xl:max-w-3lg mx-auto p-8 lg:p-24 ">
+              <h2 className="big-header text-center">The Team</h2>
+              <div className="grid grid-cols-1 gap-y-8 md:gap-y-4 md:grid-cols-3 md:gap-x-4 justify-center">
                 {writersExecutives.map((writer) => (
                   <ScrollReveal type="fromBottom" key={writer.id}>
-                    <div className="space-y-3 group">
+                    <div className="space-y-2 group">
                       <div className="relative">
                         <img
                           src={writer.imageUrl}
@@ -173,11 +173,11 @@ function About() {
                         </div>
                       </div>
 
-                      <div className="">
+                      <div className="-space-y-0.5">
                         <h4 className="text-black text-center tracking-wide">
                           {writer.name}
                         </h4>
-                        <p className="text-ash text-center tracking-wide opacity-60">
+                        <p className="text-ash text-center tracking-wide opacity-60 text-sm font-light">
                           {writer.position}
                         </p>
                       </div>
@@ -186,17 +186,21 @@ function About() {
                 ))}
               </div>
 
-              <Link to="/pharm-writers">
-                <button className="border-black border-2 bg-white w-32 p-3 my-6 group mx-auto block">
-                  <div className=" -space-x-4 group-hover:space-x-2   flex flex-row justify-center items-center mx-auto">
-                    <p className="text-center text-ash opacity-60">View All</p>
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      className="text-black/60  opacity-0 group-hover:opacity-100  transition-translate duration-md"
-                    />
-                  </div>
-                </button>
-              </Link>
+              <ScrollReveal type="fromBottom">
+                <Link to="/pharm-writers">
+                  <button className="border-black border-2 bg-white w-32 p-3 my-8 group mx-auto block">
+                    <div className=" -space-x-4 group-hover:space-x-2   flex flex-row justify-center items-center mx-auto">
+                      <p className="text-center text-ash opacity-60">
+                        View All
+                      </p>
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        className="text-black/60  opacity-0 group-hover:opacity-100  transition-translate duration-md"
+                      />
+                    </div>
+                  </button>
+                </Link>
+              </ScrollReveal>
             </div>
           </ScrollReveal>
         </Container>
