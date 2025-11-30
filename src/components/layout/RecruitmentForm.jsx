@@ -164,20 +164,26 @@ function RecruitmentForm() {
       <Container>
         <hr className="text-gray w-full xl:max-w-2xl mx-auto my-10" />
         <div className="flex flex-col md:flex-row md:justify-between items-center w-full xl:max-w-2xl mx-auto space-y-10 md:space-y-0">
-          <ScrollReveal type="fromLeft" className="w-fit">
-            <div className="w-fit">
-              <h4 className="text-2xl">Our Board</h4>
-              <p className="mt-2 md:mt-6 text-ash">PANS Secretariat</p>
-              <p className="text-ash">Faculty of Pharmaceutical Sciences</p>
-              <p className="text-ash">UNIPORT, Rivers, Nigeria</p>
+          <ScrollReveal type="fromLeft" className="w-full md:w-auto">
+            <div className="text-left flex flex-col  md:items-start">
+              <div>
+                <h4 className="text-2xl">Our Board</h4>
+                <p className="mt-2 md:mt-6 text-ash">PANS Secretariat</p>
+                <p className="text-ash">Faculty of Pharmaceutical Sciences</p>
+                <p className="text-ash">UNIPORT, Rivers, Nigeria</p>
+              </div>
             </div>
           </ScrollReveal>
-          <ScrollReveal type="fromRight" className="w-min">
-            <div className="w-fit">
-              <h4 className="text-2xl">Get in Touch</h4>
-              <p className="mt-2 md:mt-6 text-ash">+234 903 560 3978</p>
-              <p className="text-ash">+234 813 161 1652</p>
-              <p className="text-ash">pansuniporteditorialboard10@gmail.com</p>
+          <ScrollReveal type="fromRight" className="w-full md:w-auto">
+            <div className="text-left flex flex-col  md:items-end">
+              <div>
+                <h4 className="text-2xl">Get in Touch</h4>
+                <p className="mt-2 md:mt-6 text-ash">+234 903 560 3978</p>
+                <p className="text-ash">+234 813 161 1652</p>
+                <p className="text-ash">
+                  pansuniporteditorialboard10@gmail.com
+                </p>
+              </div>
             </div>
           </ScrollReveal>
         </div>

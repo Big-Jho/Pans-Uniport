@@ -8,11 +8,13 @@ import { NavigationProvider } from "./context/NavigationContext";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Blog from "./components/pages/Blog";
+import Blogs from "./components/pages/Blogs";
 import PharmWriters from "./components/pages/PharmWriters";
 import NotFound from "./components/pages/NotFound";
-import PharmSchLife from "./components/pages/PharmSchLife";
+import RxDiary from "./components/pages/RxDiary";
 import Donate from "./components/pages/Donate";
+
+import BlogPage from "./components/pages/BlogPage";
 
 function App() {
   return (
@@ -22,12 +24,14 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/blogs" element={<Blogs />} />
           <Route exact path="/pharm-writers" element={<PharmWriters />} />
-          <Route exact path="/pharmschlife" element={<PharmSchLife />} />
+          <Route exact path="/rx-diary" element={<RxDiary />} />
           <Route exact path="/donate" element={<Donate />} />
           <Route exact path="/not-found" element={<NotFound />} />
           <Route path="/*" element={<NotFound />} />
+
+          <Route exact path="/blogs/:slug" element={<BlogPage />} />
         </Routes>
       </Router>
     </NavigationProvider>

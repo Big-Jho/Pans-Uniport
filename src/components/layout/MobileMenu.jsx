@@ -14,7 +14,7 @@ function MobileMenu() {
         menuVisibility ? "translate-x-0" : "-translate-x-full"
       }`}
     >
-      <div className={` bg-white h-full max-w-sm  shadow-xl  `}>
+      <div className={`bg-white h-full max-w-sm  shadow-xl`}>
         <Container className="relative">
           {/* Hamburger in MobileMenu */}
           <div className="absolute top-6 right-6 rounded-full  bg-ash text-center">
@@ -30,38 +30,38 @@ function MobileMenu() {
           <div className="flex flex-col  items-center gap-6 -pl-4 my-12 min-h-screen">
             <Link
               onClick={() => toggleMenu(false)}
-              to="/blog"
+              to="/blogs"
               className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              Blog
+              Blogs
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
               to="/pharm-writers"
               className="flex flex-row w-[80%]  p-3 px-6  uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              PharmWritters
+              PharmWriters
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
-              to="/pharmschlife"
+              to="/rx-diary"
               className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              PharmSchool Life
+              Rx Diary
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
-              to="/news"
+              to="/sport-update"
               className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              News
+              Sport Update
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
-              to="/story"
+              to="/drug-spotlight"
               className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              Story
+              Drug Spotlight
             </Link>
             <Link
               onClick={() => toggleMenu(false)}

@@ -56,26 +56,23 @@ function About() {
             <div className="w-full xl:max-w-2xl mx-auto">
               <h2 className="text-black big-header">Who We Are</h2>
               <p className="text-ash mb-6 opacity-85">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur vitae ad omnis voluptatem molestiae error commodi
-                minus officiis tempora quasi, beatae corrupti facilis
-                perferendis nisi odit voluptas necessitatibus eaque tempore
-                ratione quam expedita voluptate illum esse explicabo. Libero,
-                porro veniam!
+                The editorial committee is committed to informing, educating,
+                and inspiring every Pansite. We are the voice of the Faculty of
+                Pharmaceutical sciences, capturing moments, telling stories, and
+                bringing clarity to the activities, achievements, and
+                experiences that shape our faculty
               </p>
               <p className="text-ash mb-6 opacity-85">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                maxime dolor alias ab distinctio officia laboriosam porro
-                accusamus dignissimos quod, dicta facilis magni vero doloremque
-                impedit perspiciatis illum at recusandae voluptas rerum maiores
-                sed! Quidem nostrum quam reiciendis placeat laudantium.
+                We exist to make sure you never miss out on what matters. From
+                academic updates to student life, from breakthroughs to
+                interviews, we curate content that keeps you connected, aware
+                and engaged
               </p>
               <p className="text-ash mb-6 opacity-85">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-                at, est unde, eos totam pariatur recusandae ab excepturi aperiam
-                tempora, dolorum quasi cupiditate qui quis esse! Quibusdam odio
-                enim excepturi, illum tenetur ipsam omnis error, esse ullam est
-                dolore perferendis?
+                This is more than an information hub, it’s a place where
+                learning meets creativity. Together we’re building a community
+                where every voice matters, every story counts, and every student
+                finds the confidence to grow, excel, and make an impact.
               </p>
             </div>
           </ScrollReveal>

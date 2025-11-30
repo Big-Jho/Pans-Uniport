@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Hero from "../layout/Hero";
 import NavCombo from "../layout/NavCombo";
 import Footer from "../layout/Footer";
+import Showcase from "../layout/Showcase";
 
 function Home() {
   const scrollTop = () => {
@@ -13,6 +14,7 @@ function Home() {
     <main>
       <NavCombo />
       <Hero />
+      <Showcase />
       <Footer />
     </main>
   );

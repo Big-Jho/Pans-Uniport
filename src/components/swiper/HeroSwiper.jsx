@@ -55,7 +55,7 @@ function HeroSwiper() {
   };
 
   return (
-    <section className="h-[calc(100vh-2rem)] bg-red-200">
+    <section className="h-[calc(100vh-2rem)] bg-red-200" id="hero">
       <Swiper
         modules={[Pagination, A11y, Autoplay]}
         spaceBetween={0}
