@@ -1,15 +1,6 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
-import {
-  getFirestore,
-  doc,
-  getDoc,
-  setDoc,
-  updateDoc,
-  runTransaction,
-  increment,
-  serverTimestamp,
-} from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { getAuth, signInAnonymously, onAuthStateChanged } from "firebase/auth";
 
 const firebaseConfig = {
