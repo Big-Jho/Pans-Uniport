@@ -17,9 +17,14 @@ function Blog() {
       <section>
         <Container className="pt-24 md:pt-28 lg:pt-40">
           <h2 className="big-header text-center">Latest Blogs</h2>
-          <div className="w-full xl:max-w-2xl mx-auto">
+
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((blog) => (
-              <div className=""></div>
+              <a className="space-y-4" href={`/blogs/${blog.slug}`}>
+                <h3 className="small-header text-ash/60">{blog.category}</h3>
+                <h2 className="big-header font-light">{blog.title}</h2>
+                <p className="text-ash/60">{blog.date}</p>
+              </a>
             ))}
           </div>
         </Container>

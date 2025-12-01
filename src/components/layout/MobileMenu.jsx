@@ -30,6 +30,13 @@ function MobileMenu() {
           <div className="flex flex-col  items-center gap-6 -pl-4 my-12 min-h-screen">
             <Link
               onClick={() => toggleMenu(false)}
+              to="/about"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
+            >
+              About Us
+            </Link>
+            <Link
+              onClick={() => toggleMenu(false)}
               to="/blogs"
               className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
@@ -72,10 +79,17 @@ function MobileMenu() {
             </Link>
             <Link
               onClick={() => toggleMenu(false)}
-              to="/opinions"
+              to="/interviews"
               className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
             >
-              Opinions
+              Interviews
+            </Link>
+            <Link
+              onClick={() => toggleMenu(false)}
+              to="/contact"
+              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
+            >
+              Contact Us
             </Link>
           </div>
         </Container>

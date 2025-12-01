@@ -85,12 +85,12 @@ function Contact() {
   return (
     <main>
       <NavCombo navColor="white" />
-      <section className="grid gid-cols-1  xl:grid-cols-2  gap-y-8 xl:gap-y-0 h-fit mb-10 xl:mb-0">
+      <section className="grid gid-cols-1  xl:grid-cols-2  gap-y-8 xl:gap-y-0 h-fit mb-10 xl:mb-0 w-full">
         {/* Image - left */}
         <div className="bg-fatimaBg bg-cover bg-center bg-no-repeat py-24 h-[70vh] lg:h-[85vh] xl:h-full"></div>
         {/* Content - right */}
 
-        <div className="bg-white xl:py-10 px-10  xl:pt-40 ">
+        <div className="bg-white xl:py-10 xl:px-10  xl:pt-40 w-full">
           <div className="container flex flex-col md:flex-row md:justify-between  w-full  mx-auto space-y-10 md:space-y-0 p-10 md:p-0">
             <ScrollReveal type="fromBottom" className="w-fit">
               <div className="w-fit">
@@ -115,11 +115,16 @@ function Contact() {
           {/* Form started */}
 
           <ScrollReveal type="fromBottom">
-            <form className="w-full mx-auto mt-10" onSubmit={handleSubmit}>
-              <p className="font-thin text-ash text-center">
+            <form
+              className="w-full mx-auto mt-10 px-4 xl:px-0"
+              onSubmit={handleSubmit}
+            >
+              <p className="text-ash py-6 ">
                 Contact us to find out more, and we will get back to you.
               </p>
-              <p className="text-ash/60 text-center">Please fill all fields</p>
+              <p className="text-red-500 text-xs font-thin">
+                *Please fill all fields
+              </p>
 
               <div className="mt-2 space-y-6">
                 <div className="input-wraper relative">

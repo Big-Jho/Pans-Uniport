@@ -10,18 +10,18 @@ import Footer from "../layout/Footer";
 import Container from "../shared/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import creativityPosts from "../data/creativityPosts";
+import rxDiaryPosts from "../data/rxDiaryPosts";
 import writers from "../data/writers.json";
 import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
-function CreativityPage() {
+function RxDiaryPage() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
   const [firebasePost, setFirebasePost] = useState(null);
   const [userReaction, setUserReaction] = useState(null);
 
-  const localPost = creativityPosts.find((p) => p.slug === slug);
+  const localPost = rxDiaryPosts.find((p) => p.slug === slug);
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -106,7 +106,7 @@ function CreativityPage() {
             {/* BLOG CONTENT */}
             <div
               className={`${
-                post.category === "poem" ? "space-y-0.5" : "space-y-2"
+                post.category === "poem" ? "space-y-0.5" : "space-y-3"
               }`}
             >
               {post.content?.map((content, index) => {
@@ -173,4 +173,4 @@ function CreativityPage() {
   );
 }
 
-export default CreativityPage;
+export default RxDiaryPage;

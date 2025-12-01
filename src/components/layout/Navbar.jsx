@@ -34,15 +34,9 @@ function Navbar({ navColor }) {
             <Link to="/contact" className="group inline-block">
               Contact
             </Link>
-            {/* <Link to="/donate" className="group inline-block">
-              Donate
-            </Link> */}
             <Link to="/subscribe" className="group inline-block">
               Subscribe
             </Link>
-            {/* <Link to="/alumni" className="group inline-block">
-              Alumni
-            </Link> */}
           </div>
         </Container>
       </section>
@@ -55,9 +49,9 @@ function Navbar({ navColor }) {
         }`}
       >
         <Container className="py-0 pt-2">
-          <div className="flex flex-row justify-between items-center">
+          <div className="grid grid-cols-11 justify-center  items-center">
             {/* Hamburger */}
-            <div className="lg:hidden">
+            <div className="lg:hidden col-span-1">
               <FontAwesomeIcon
                 icon={menuVisibility ? faXmark : faBars}
                 size="xl"
@@ -69,7 +63,7 @@ function Navbar({ navColor }) {
             </div>
 
             {/* First Menu Links */}
-            <div className="hidden lg:flex flex-row space-x-8 justify-between items-center ">
+            <div className="hidden lg:flex flex-row gap-x-8 justify-start items-center col-span-5">
               <Link to="/blogs" className="group inline-block">
                 <NavLinks
                   shade={scrolled || navColor === "white" ? "black" : "white"}
@@ -91,19 +85,30 @@ function Navbar({ navColor }) {
                   Rx Diary
                 </NavLinks>
               </Link>
+              <Link to="/creativity" className="group inline-block">
+                <NavLinks
+                  shade={scrolled || navColor === "white" ? "black" : "white"}
+                >
+                  Creativity
+                </NavLinks>
+              </Link>
             </div>
 
             {/* Home  - Logo */}
-            <Link to="/">
-              <img
-                src={PansLogo}
-                alt="PANS-logo"
-                className={`w-[50px] md:w-[50px] ${scrolled && "w-[30px]"}`}
-              />
-            </Link>
+            <div className="col-span-9 lg:col-span-1">
+              <Link to="/" className="mx-auto ">
+                <img
+                  src={PansLogo}
+                  alt="PANS-logo"
+                  className={`mx-auto w-[50px] md:w-[50px] ${
+                    scrolled && "w-[30px]"
+                  }`}
+                />
+              </Link>
+            </div>
 
             {/* Second set of Links */}
-            <div className="hidden lg:flex flex-row space-x-8 justify-between items-center">
+            <div className="hidden lg:flex flex-row space-x-8 items-center justify-end col-span-5">
               <Link to="/sport-update" className="group inline-block">
                 <NavLinks
                   shade={scrolled || navColor === "white" ? "black" : "white"}
@@ -119,14 +124,6 @@ function Navbar({ navColor }) {
                 </NavLinks>
               </Link>
 
-              {/* <Link to="/creativity" className="group inline-block">
-                <NavLinks
-                  shade={scrolled || navColor === "white" ? "black" : "white"}
-                >
-                  Creativity
-                </NavLinks>
-              </Link> */}
-
               <Link to="/interviews" className="group inline-block">
                 <NavLinks
                   shade={scrolled || navColor === "white" ? "black" : "white"}
@@ -137,7 +134,7 @@ function Navbar({ navColor }) {
             </div>
 
             {/* Placeholder */}
-            <div className="lg:hidden"></div>
+            <div className="lg:hidden col-span-1"></div>
           </div>
         </Container>
       </section>

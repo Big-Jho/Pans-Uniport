@@ -12,9 +12,12 @@ import Blogs from "./components/pages/Blogs";
 import PharmWriters from "./components/pages/PharmWriters";
 import NotFound from "./components/pages/NotFound";
 import RxDiary from "./components/pages/RxDiary";
+import Creativity from "./components/pages/Creativity";
 import Donate from "./components/pages/Donate";
 
 import BlogPage from "./components/pages/BlogPage";
+import CreativityPage from "./components/pages/CreativityPage";
+import RxDiaryPage from "./components/pages/RxDiaryPage";
 
 function App() {
   return (
@@ -27,11 +30,14 @@ function App() {
           <Route exact path="/blogs" element={<Blogs />} />
           <Route exact path="/pharm-writers" element={<PharmWriters />} />
           <Route exact path="/rx-diary" element={<RxDiary />} />
+          <Route exact path="/creativity" element={<Creativity />} />
           <Route exact path="/donate" element={<Donate />} />
           <Route exact path="/not-found" element={<NotFound />} />
           <Route path="/*" element={<NotFound />} />
 
           <Route exact path="/blogs/:slug" element={<BlogPage />} />
+          <Route exact path="/rx-diary/:slug" element={<RxDiaryPage />} />
+          <Route exact path="/creativity/:slug" element={<CreativityPage />} />
         </Routes>
       </Router>
     </NavigationProvider>

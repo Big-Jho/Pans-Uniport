@@ -11,46 +11,83 @@ function Footer() {
   return (
     <>
       <section className="pt-16 border-y  border-gray">
-        <section>
+        <section className="pb-8">
           {/* Footer Link Section  */}
           <ScrollReveal type="fromBottom">
-            <Container className="flex flex-col items-center space-y-12 md:space-y-0 md:flex-row md:justify-between md:items-start">
-              <div className="w-full md:w-1/2 ">
-                <h4 className="small-header text-black pb-4">Pans Uniport</h4>
-                <div className="bg-white flex flex-col justify-center items-start space-y-4">
-                  <Link to="/" className="group inline-block">
-                    <NavLinks color="black" shade="ash" className="font-light">
-                      Home
-                    </NavLinks>
-                  </Link>
-                  <Link to="/about" className="group inline-block">
-                    <NavLinks color="black" shade="ash" className="font-light">
-                      About Us
-                    </NavLinks>
-                  </Link>
-                  <Link to="/contact" className="group inline-block">
-                    <NavLinks color="black" shade="ash" className="font-light">
-                      Contact
-                    </NavLinks>
-                  </Link>
-                  <Link to="/pharm-writers" className="group inline-block">
-                    <NavLinks color="black" shade="ash" className="font-light">
-                      PharmWriters
-                    </NavLinks>
-                  </Link>
+            <Container className="flex flex-col items-center  md:space-y-0 md:flex-row md:justify-between md:items-start">
+              <div className="w-full md:w-1/2 hidden md:block">
+                <div className="">
+                  <div className="bg-white w-80 mx-auto">
+                    <h4 className="small-header text-black pb-4 text-center w-80 pl-6">
+                      Pans Uniport
+                    </h4>
+                    <div className="grid grid-cols-2 mx-auto gap-x-6 gap-y-2">
+                      <div className="flex flex-row justify-end">
+                        <Link to="/" className="group">
+                          <NavLinks
+                            color="black"
+                            shade="ash"
+                            className="font-light"
+                          >
+                            Home
+                          </NavLinks>
+                        </Link>
+                      </div>
+
+                      <div className="flex flex-row justify-start">
+                        <Link to="/about" className="group">
+                          <NavLinks
+                            color="black"
+                            shade="ash"
+                            className="font-light"
+                          >
+                            About Us
+                          </NavLinks>
+                        </Link>
+                      </div>
+
+                      <div className="flex flex-row justify-end">
+                        <Link to="/contact" className="group">
+                          <NavLinks
+                            color="black"
+                            shade="ash"
+                            className="font-light"
+                          >
+                            Contact
+                          </NavLinks>
+                        </Link>
+                      </div>
+
+                      <div className="flex flex-row justify-start">
+                        <Link to="/pharm-writers" className="group">
+                          <NavLinks
+                            color="black"
+                            shade="ash"
+                            className="font-light"
+                          >
+                            PharmWriters
+                          </NavLinks>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* ---------- */}
               <div className="flex flex-col items-center w-1/2">
-                <h4 className="small-header text-ash pb-4">Follow us</h4>
-                <div className="bg-white flex flex-row justify-center items-center space-x-6">
-                  <Link to="/about" className="group inline-block">
-                    <FontAwesomeIcon icon={faInstagram} size="lg" />
-                  </Link>
-                  <Link to="/about" className="group inline-block">
-                    <FontAwesomeIcon icon={faTwitter} size="lg" />
-                  </Link>
+                <div className="flex flex-row justify-end">
+                  <div>
+                    <h4 className="small-header text-ash pb-4">Follow us</h4>
+                    <div className="bg-white flex flex-row justify-center items-center space-x-6">
+                      <Link to="/about" className="group inline-block">
+                        <FontAwesomeIcon icon={faInstagram} size="lg" />
+                      </Link>
+                      <Link to="/about" className="group inline-block">
+                        <FontAwesomeIcon icon={faTwitter} size="lg" />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Container>
