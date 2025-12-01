@@ -6,6 +6,8 @@ const blogPosts = [
     coverImage: "",
     date: "November 25, 2025",
     category: "newsletter",
+    likes: 0,
+    dislikes: 0,
     author: {
       id: 6,
       name: "Cherrie",
