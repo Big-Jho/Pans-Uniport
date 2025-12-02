@@ -94,112 +94,110 @@ function About() {
 
       <section className="bg-white  py-8">
         <Container>
-          <ScrollReveal type="fromBottom">
-            <div className="w-full xl:max-w-3lg mx-auto p-8 lg:p-24 ">
+          <div className="w-full xl:max-w-3lg mx-auto p-8 lg:p-24 ">
+            <ScrollReveal type="fromBottom">
               <h2 className="big-header text-center">The Team</h2>
-              <div className="grid grid-cols-1 gap-y-8 md:gap-y-4 md:grid-cols-3 md:gap-x-4 justify-center">
-                {writersExecutives.map((writer) => (
-                  <ScrollReveal type="fromBottom" key={writer.id}>
-                    <div className="space-y-2 group">
-                      <div className="relative">
-                        <img
-                          src={writer.imageUrl}
-                          alt={`${writer.name} - ${writer.position}`}
-                          className="w-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-md flex flex-row justify-center items-center space-x-2">
-                          {writer.socials.linkedin && (
-                            <a href={writer.socials.linkedin} _blank="true">
-                              <FontAwesomeIcon
-                                icon={faLinkedin}
-                                size="xl"
-                                className="text-white"
-                              />
-                            </a>
-                          )}
-
-                          {writer.socials.twitter && (
-                            <a href={writer.socials.twitter} _blank="true">
-                              <FontAwesomeIcon
-                                icon={faTwitter}
-                                size="xl"
-                                className="text-white"
-                              />
-                            </a>
-                          )}
-
-                          {writer.socials.instagram && (
-                            <a href={writer.socials.instagram} _blank="true">
-                              <FontAwesomeIcon
-                                icon={faInstagram}
-                                size="xl"
-                                className="text-white"
-                              />
-                            </a>
-                          )}
-
-                          {writer.socials.facebook && (
-                            <a href={writer.socials.facebook} _blank="true">
-                              <FontAwesomeIcon
-                                icon={faFacebook}
-                                size="xl"
-                                className="text-white"
-                              />
-                            </a>
-                          )}
-
-                          {writer.socials.tiktok && (
-                            <a href={writer.socials.tiktok} _blank="true">
-                              <FontAwesomeIcon
-                                icon={faTiktok}
-                                size="xl"
-                                className="text-white"
-                              />
-                            </a>
-                          )}
-
-                          {writer.socials.substack && (
-                            <a href={writer.socials.substack} _blank="true">
-                              <img
-                                src={substackPng}
-                                alt="subtrack logo"
-                                className="w-8"
-                              />
-                            </a>
-                          )}
-                        </div>
-                      </div>
-
-                      <div className="-space-y-0.5">
-                        <h4 className="text-black text-center tracking-wide">
-                          {writer.name}
-                        </h4>
-                        <p className="text-ash text-center tracking-wide opacity-60 text-sm font-light">
-                          {writer.position}
-                        </p>
-                      </div>
-                    </div>
-                  </ScrollReveal>
-                ))}
-              </div>
-
-              <ScrollReveal type="fromBottom">
-                <Link to="/pharm-writers">
-                  <button className="border-black border-2 bg-white w-32 p-3 my-8 group mx-auto block">
-                    <div className=" -space-x-4 group-hover:space-x-2   flex flex-row justify-center items-center mx-auto">
-                      <p className="text-center text-ash opacity-60">
-                        View All
-                      </p>
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        className="text-black/60  opacity-0 group-hover:opacity-100  transition-translate duration-md"
+            </ScrollReveal>
+            <div className="grid grid-cols-1 gap-y-8 md:gap-y-4 md:grid-cols-3 md:gap-x-4 justify-center">
+              {writersExecutives.map((writer) => (
+                <ScrollReveal type="fromBottom" key={writer.id}>
+                  <div className="space-y-2 group">
+                    <div className="relative">
+                      <img
+                        src={writer.imageUrl}
+                        alt={`${writer.name} - ${writer.position}`}
+                        className="w-full object-cover"
                       />
+                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-md flex flex-row justify-center items-center space-x-2">
+                        {writer.socials.linkedin && (
+                          <a href={writer.socials.linkedin} _blank="true">
+                            <FontAwesomeIcon
+                              icon={faLinkedin}
+                              size="xl"
+                              className="text-white"
+                            />
+                          </a>
+                        )}
+
+                        {writer.socials.twitter && (
+                          <a href={writer.socials.twitter} _blank="true">
+                            <FontAwesomeIcon
+                              icon={faTwitter}
+                              size="xl"
+                              className="text-white"
+                            />
+                          </a>
+                        )}
+
+                        {writer.socials.instagram && (
+                          <a href={writer.socials.instagram} _blank="true">
+                            <FontAwesomeIcon
+                              icon={faInstagram}
+                              size="xl"
+                              className="text-white"
+                            />
+                          </a>
+                        )}
+
+                        {writer.socials.facebook && (
+                          <a href={writer.socials.facebook} _blank="true">
+                            <FontAwesomeIcon
+                              icon={faFacebook}
+                              size="xl"
+                              className="text-white"
+                            />
+                          </a>
+                        )}
+
+                        {writer.socials.tiktok && (
+                          <a href={writer.socials.tiktok} _blank="true">
+                            <FontAwesomeIcon
+                              icon={faTiktok}
+                              size="xl"
+                              className="text-white"
+                            />
+                          </a>
+                        )}
+
+                        {writer.socials.substack && (
+                          <a href={writer.socials.substack} _blank="true">
+                            <img
+                              src={substackPng}
+                              alt="subtrack logo"
+                              className="w-8"
+                            />
+                          </a>
+                        )}
+                      </div>
                     </div>
-                  </button>
-                </Link>
-              </ScrollReveal>
+
+                    <div className="-space-y-0.5">
+                      <h4 className="text-black text-center tracking-wide">
+                        {writer.name}
+                      </h4>
+                      <p className="text-ash text-center tracking-wide opacity-60 text-sm font-light">
+                        {writer.position}
+                      </p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
             </div>
-          </ScrollReveal>
+
+            <ScrollReveal type="fromBottom">
+              <Link to="/pharm-writers">
+                <button className="border-black border-2 bg-white w-32 p-3 my-8 group mx-auto block">
+                  <div className=" -space-x-4 group-hover:space-x-2   flex flex-row justify-center items-center mx-auto">
+                    <p className="text-center text-ash opacity-60">View All</p>
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="text-black/60  opacity-0 group-hover:opacity-100  transition-translate duration-md"
+                    />
+                  </div>
+                </button>
+              </Link>
+            </ScrollReveal>
+          </div>
         </Container>
       </section>
 

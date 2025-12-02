@@ -10,7 +10,7 @@ function MobileMenu() {
 
   return (
     <div
-      className={`absolute top-0 right-0 left-0 bg-white  bg-opacity-10 w-full h-[100vh] lg:hidden duration-500 transition-all delay-150 ${
+      className={`absolute top-0 right-0 left-0 bg-white  bg-opacity-10 w-full min-h-[100vh] lg:hidden duration-500 transition-all delay-150 ${
         menuVisibility ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -27,7 +27,7 @@ function MobileMenu() {
             </div>
           </div>
 
-          <div className="flex flex-col  items-center gap-6 -pl-4 my-12 min-h-screen">
+          <div className="flex flex-col  items-center gap-5 -pl-4 my-12 min-h-screen">
             <Link
               onClick={() => toggleMenu(false)}
               to="/about"

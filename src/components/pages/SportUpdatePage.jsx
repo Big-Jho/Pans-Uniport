@@ -10,7 +10,7 @@ import Footer from "../layout/Footer";
 import Container from "../shared/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import rxDiaryPosts from "../data/rxDiaryPosts";
+import sportUpdatePosts from "../data/sportUpdatePosts";
 import writers from "../data/writers.json";
 import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -20,8 +20,9 @@ function RxDiaryPage() {
 
   const [firebasePost, setFirebasePost] = useState(null);
   const [userReaction, setUserReaction] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
 
-  const localPost = rxDiaryPosts.find((p) => p.slug === slug);
+  const localPost = sportUpdatePosts.find((p) => p.slug === slug);
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -94,7 +95,8 @@ function RxDiaryPage() {
                 <p className="text-ash/60 text-center">
                   By{" "}
                   <span className="text-black">
-                    {writers[post.author.id - 1]?.name}
+                    {writers[post.author.id - 1]?.nickname ||
+                      writers[post.author.id - 1]?.name}
                   </span>{" "}
                   on {post.date}
                 </p>
@@ -119,6 +121,39 @@ function RxDiaryPage() {
                         </li>
                       ))}
                     </ol>
+                  );
+                }
+                if (content.element === "accordion") {
+                  const toggle = (i) => {
+                    setOpenIndex(openIndex === i ? null : i);
+                  };
+
+                  return (
+                    <div className="w-full max-w-2xl mx-auto space-y-4 pb-4">
+                      {content.faqs.map((item, i) => (
+                        <div key={i} className="shadow-md">
+                          <button
+                            onClick={() => toggle(i)}
+                            className="w-full flex justify-between items-center p-4 text-left text-ash/80 font-medium "
+                          >
+                            {item.question}
+                            <span className="text-xl">
+                              {openIndex === i ? "-" : "+"}
+                            </span>
+                          </button>
+
+                          <div
+                            className={`transition-all overflow-hidden ${
+                              openIndex === i ? "max-h-[500px] p-4" : "max-h-0"
+                            }`}
+                          >
+                            <p className="text-ash/60 whitespace-pre-line">
+                              {item.answer}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   );
                 }
                 if (content.element === "nest") {

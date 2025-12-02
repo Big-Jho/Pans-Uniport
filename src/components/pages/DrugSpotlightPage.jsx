@@ -10,18 +10,18 @@ import Footer from "../layout/Footer";
 import Container from "../shared/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import rxDiaryPosts from "../data/rxDiaryPosts";
+import drugSpotlightPosts from "../data/drugSpotlightPosts";
 import writers from "../data/writers.json";
 import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
-function RxDiaryPage() {
+function CreativityPage() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
   const [firebasePost, setFirebasePost] = useState(null);
   const [userReaction, setUserReaction] = useState(null);
 
-  const localPost = rxDiaryPosts.find((p) => p.slug === slug);
+  const localPost = drugSpotlightPosts.find((p) => p.slug === slug);
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -106,7 +106,7 @@ function RxDiaryPage() {
             {/* BLOG CONTENT */}
             <div
               className={`${
-                post.category === "poem" ? "space-y-0.5" : "space-y-3"
+                post.category === "poem" ? "space-y-0.5" : "space-y-2"
               }`}
             >
               {post.content?.map((content, index) => {
@@ -119,15 +119,6 @@ function RxDiaryPage() {
                         </li>
                       ))}
                     </ol>
-                  );
-                }
-                if (content.element === "nest") {
-                  return (
-                    <p className={content.class}>
-                      {content.innerContent[0]}
-                      {content.innerContent[1]}
-                      {content.innerContent[2]}
-                    </p>
                   );
                 }
 
@@ -182,4 +173,4 @@ function RxDiaryPage() {
   );
 }
 
-export default RxDiaryPage;
+export default CreativityPage;

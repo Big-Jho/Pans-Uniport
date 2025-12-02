@@ -5,9 +5,9 @@ import Container from "../shared/Container";
 import Card from "../shared/Card";
 import ScrollReveal from "../ScrollReveal";
 
-import rxDiaryPosts from "../data/rxDiaryPosts";
+import sportUpdatePosts from "../data/sportUpdatePosts";
 
-function RxDiary() {
+function SportUpdate() {
   const scrollTop = () => {
     window.scroll(0, 0);
   };
@@ -18,13 +18,13 @@ function RxDiary() {
       <NavCombo navColor="white" />
       <section>
         <Container className="pt-24 md:pt-28 lg:pt-40">
-          <h2 className="big-header text-center">Latest Blogs</h2>
+          <h2 className="big-header text-center">Latest Sport News</h2>
 
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-            {rxDiaryPosts.map((post) => (
+            {sportUpdatePosts.map((post) => (
               <ScrollReveal type="fromBottom">
                 <Card>
-                  <a className="space-y-4" href={`/rx-diary/${post.slug}`}>
+                  <a className="space-y-4" href={`/sport-update/${post.slug}`}>
                     <h3 className="small-header text-ash/60">
                       {post.category}
                     </h3>
@@ -42,4 +42,4 @@ function RxDiary() {
   );
 }
 
-export default RxDiary;
+export default SportUpdate;

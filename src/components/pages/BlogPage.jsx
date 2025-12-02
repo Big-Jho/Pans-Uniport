@@ -117,6 +117,15 @@ function BlogPage() {
                     </ol>
                   );
                 }
+                if (content.element === "nest") {
+                  return (
+                    <p className={content.class}>
+                      {content.innerContent[0]}
+                      {content.innerContent[1]}
+                      {content.innerContent[2]}
+                    </p>
+                  );
+                }
 
                 if (content.element === "img") {
                   return (
