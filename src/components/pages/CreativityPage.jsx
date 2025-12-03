@@ -70,7 +70,7 @@ function CreativityPage() {
   const firestoreData = firebasePost || { likes: 0, dislikes: 0 };
 
   const handleReact = async (type) => {
-    const res = await reactToPost(slug, type);
+    const res = await toggleLike(slug);
     if (res.success) setUserReaction(type);
     else alert("Error: " + res.error);
   };
@@ -152,16 +152,6 @@ function CreativityPage() {
               >
                 <FontAwesomeIcon icon={faThumbsUp} className="mr-2" />
                 {firestoreData.likes ?? 0}
-              </button>
-
-              <button
-                onClick={() => handleReact("dislike")}
-                className={`text-lg transition ${
-                  userReaction === "dislike" ? "text-red-600" : "text-gray-700"
-                }`}
-              >
-                <FontAwesomeIcon icon={faThumbsDown} className="mr-2" />
-                {firestoreData.dislikes ?? 0}
               </button>
             </div>
           </div>
