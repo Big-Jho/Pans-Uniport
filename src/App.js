@@ -39,7 +39,6 @@ function App() {
           <Route exact path="/drug-spotlight" element={<DrugSpotlight />} />
           <Route exact path="/donate" element={<Donate />} />
           <Route exact path="/not-found" element={<NotFound />} />
-          <Route path="/*" element={<NotFound />} />
 
           <Route exact path="/blogs/:slug" element={<BlogPage />} />
           <Route exact path="/rx-diary/:slug" element={<RxDiaryPage />} />
@@ -54,6 +53,9 @@ function App() {
             path="/drug-spotlight/:slug"
             element={<DrugSpotlightPage />}
           />
+
+          {/* Routes that dont match */}
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </NavigationProvider>
