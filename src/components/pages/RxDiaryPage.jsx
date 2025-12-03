@@ -8,11 +8,10 @@ import { ensureUser, toggleLike } from "../../likeHelpers";
 import NavCombo from "../layout/NavCombo";
 import Footer from "../layout/Footer";
 import Container from "../shared/Container";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import rxDiaryPosts from "../data/rxDiaryPosts";
 import writers from "../data/writers.json";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { ReactComponent as HeartIcon } from "../../assets/images/heart-regular-full.svg";
 
 function RxDiaryPage() {
   const navigate = useNavigate();
@@ -155,11 +154,12 @@ function RxDiaryPage() {
             <div className="flex justify-center gap-6 my-10">
               <button
                 onClick={() => handleReact("like")}
-                className={`text-lg transition ${
+                className={`text-lg transition flex flex-row justify-center ${
                   userReaction === "like" ? "text-green-600" : "text-gray-700"
                 }`}
               >
-                <FontAwesomeIcon icon={faThumbsUp} className="mr-2" />
+                <HeartIcon className="w-6 h-6 pt-1 text-black mr-1 inline" />
+
                 {firestoreData.likes ?? 0}
               </button>
             </div>
