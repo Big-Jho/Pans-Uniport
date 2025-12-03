@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import { db, auth } from "../../firebase";
 import { doc, onSnapshot, getDoc } from "firebase/firestore";
-import { ensureUser, reactToPost } from "../../likeHelpers";
+import { ensureUser, toggleLike } from "../../likeHelpers";
 
 import NavCombo from "../layout/NavCombo";
 import Footer from "../layout/Footer";
@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import blogPosts from "../data/blogPosts";
 import writers from "../data/writers.json";
-import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 function BlogPage() {
   const navigate = useNavigate();
