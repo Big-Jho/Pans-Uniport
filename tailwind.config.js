@@ -60,7 +60,6 @@ module.exports = {
         fatimaBg: "url('./assets/images/rahim-fatima.jpeg')",
         conference: "url('./assets/images/conference-room.jpeg')",
         gist: "url('./assets/images/gist.jpeg')",
-        ball: "url('./assets/images/ball.jpg')",
         medicine: "url('./assets/images/medicine.jpeg')",
       },
     },
