@@ -47,6 +47,11 @@ function Home() {
             <a href={`/rx-diary/${post.slug}`}>
               <div className="space-y-2 pb-6">
                 <h4 className="small-header text-ash/60">{post.category}</h4>
+                <img
+                  src={post.coverImage}
+                  alt={`cover-image`}
+                  className="w-full"
+                />
                 <p className="text-xl text-black">{post.title}</p>
                 <p className="small-header-lowercase">{post.date}</p>
               </div>

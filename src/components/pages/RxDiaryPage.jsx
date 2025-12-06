@@ -102,6 +102,12 @@ function RxDiaryPage() {
               <div className="h-0.5 w-12 bg-ash/60 mx-auto"></div>
             </div>
 
+            <img
+              src={post.coverImage}
+              alt="cover-image"
+              className="w-full pb-8"
+            />
+
             {/* BLOG CONTENT */}
             <div
               className={`${
