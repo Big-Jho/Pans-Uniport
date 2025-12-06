@@ -59,7 +59,7 @@ function PharmWriters() {
               <h2 className="text-3xl lg:text-4xl mb-8">
                 Meet the Editorial Team
               </h2>
-              <div className="grid grid-cols-1 gap-y-8 md:gap-y-4 md:grid-cols-3 md:gap-x-4 justify-items-center">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-3  justify-items-center">
                 {writers.map((writer) => (
                   <ScrollReveal type="fromBottom" key={writer.id}>
                     <div className="space-y-2 group">
@@ -156,11 +156,11 @@ function PharmWriters() {
                         </div>
                       </div>
 
-                      <div className="-space-y-1">
+                      <div className="-space-y-0">
                         <h4 className="text-black text-center tracking-wide">
                           {writer.name}
                         </h4>
-                        <p className="text-ash text-center tracking-wide opacity-60">
+                        <p className="text-ash text-sm text-center tracking-wide opacity-60">
                           {writer.position}
                         </p>
                       </div>

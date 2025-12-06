@@ -5,7 +5,8 @@ const rxDiaryPosts = [
     title:
       "Academic pressure? Here’s how we handle the pressure and how you can too.",
     slug: "academic-pressure",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_280,f_jpg/v1765038115/academic-pressure_aw5rcr.jpg",
     date: "November 25, 2025",
     category: "lifestyle",
     likes: 0,
@@ -144,13 +145,14 @@ const rxDiaryPosts = [
     id: 2,
     title: "The Chapters You Don't See: My Pharmacy School Experience",
     slug: "the-chapters-you-don't-see",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_300,f_jpg/v1765038615/chapters-you-dont-see_vnspij.jpg",
     date: "November 28, 2025",
     category: "Rx diary",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 18,
+      id: 7,
       name: "Onuah Favour Hachikaru",
       level: "500Level",
       position: "Member",
@@ -269,13 +271,14 @@ const rxDiaryPosts = [
     id: 3,
     title: "When Purpose Calls, You Keep Rising",
     slug: "when-purpose-calls-you-keep-rising",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_330,f_jpg/v1765039084/when-purpose-calls_ixhzf0.jpg",
     date: "December 4, 2025",
-    category: "Rx diary",
+    category: "motivation",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 23,
+      id: 11,
       name: "Orlu Christian Chukwuma",
       level: "500Level",
       position: "Member",

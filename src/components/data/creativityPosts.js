@@ -3,7 +3,8 @@ const creativityPosts = [
     id: 1,
     title: "Time For A Chill Pill",
     slug: "time-for-a-chill-pill",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/v1765040659/christmas-light_Large_qyxxdz.jpg",
     date: "November 25, 2025",
     category: "poem",
     likes: 0,

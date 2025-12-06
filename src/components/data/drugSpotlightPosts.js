@@ -3,13 +3,14 @@ const drugSpotlightPosts = [
     id: 1,
     title: "Flagyl: What People Use It For VS. What It’s Actually For",
     slug: "flagyl",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/f_jpg/v1765039754/flagyl_tlocjx.png",
     date: "November 25, 2025",
     category: "Drug information",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 5,
+      id: 6,
       name: "Ikoro Amarachi Vivian",
       level: "500Level",
       position: "Member",

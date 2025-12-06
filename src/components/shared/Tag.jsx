@@ -1,8 +1,11 @@
 import React from "react";
 
-function Tag({ children, bg, rounded }) {
+function Tag({ children, bg, className }) {
   return (
-    <span className={`bg-${bg} px-3 py-1 uppercase ${rounded && "rounded-md"}`}>
+    <span
+      className={`bg-${bg} ${className} px-3 py-1 uppercase  tracking-wider
+      }`}
+    >
       {children}
     </span>
   );

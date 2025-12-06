@@ -3,13 +3,14 @@ const sportUpdatePosts = [
     id: 1,
     title: "The Messi Cup: December’s New Constellation",
     slug: "the-messi-cup",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/v1765040205/messi-cup_yhdqzh.webp",
     date: "December 2, 2025",
     category: "sport",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 22,
+      id: 13,
       name: "Catalyst",
       level: "400Level",
       position: "",

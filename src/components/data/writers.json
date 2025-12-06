@@ -29,6 +29,7 @@
       "linkedin": ""
     }
   },
+
   {
     "id": 3,
     "name": "Dada Joseph",
@@ -48,11 +49,27 @@
 
   {
     "id": 4,
+    "name": "Bob Eroh Ejiroghene Mercy",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Vice President",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764933254/PHOTO-2025-12-01-23-13-34_n1bfev.jpg",
+    "socials": {
+      "facebook": "https://www.facebook.com/ejiroghene.mercy.bob.eroh",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/gg_globalgiant/",
+      "linkedin": "https://www.linkedin.com/in/ejiroghene-mercy-bob-eroh-569133249/"
+    }
+  },
+
+  {
+    "id": 5,
     "name": "Nnabugo, Praise Glory",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763982120/IMG_3052_wm0cfr_e948b0.jpg",
     "socials": {
       "facebook": "",
@@ -63,12 +80,12 @@
   },
 
   {
-    "id": 5,
+    "id": 6,
     "name": "Ikoro Amarachi Vivian",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921180/IMG_3053_yo92qf.jpg",
     "socials": {
       "facebook": "",
@@ -79,12 +96,27 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
+    "name": "Onuah Favour Hachikaru",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763993826/IMG_3067_ufpbzi_5b1b02.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/_hachibabyyy__",
+      "linkedin": ""
+    }
+  },
+  {
+    "id": 8,
     "name": "Ozodinobi Obioma-Obioha Cherilyn",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763983415/IMG_3054_zvmlyz.jpg",
     "socials": {
       "facebook": "https://web.facebook.com/profile.php?id=61575036359303",
@@ -96,12 +128,12 @@
   },
 
   {
-    "id": 7,
+    "id": 9,
     "name": "EdiongoAbasi Edem Peters",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921211/IMG_3055_nbnfaz.jpg",
     "socials": {
       "facebook": "https://web.facebook.com/profile.php?id=100079200786163",
@@ -112,12 +144,12 @@
   },
 
   {
-    "id": 8,
+    "id": 10,
     "name": "Onyeadiri Chisimbiri Chinenye",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921184/IMG_3056_cfqutc.jpg",
     "socials": {
       "facebook": "",
@@ -128,12 +160,27 @@
     }
   },
   {
-    "id": 9,
+    "id": 11,
+    "name": "Orlu Christian Chukwuma",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1764652946/IMG-20251201-WA0025_qlmjnp.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "id": 12,
     "name": "Oreze Kenneth James",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763983616/IMG_3057_bcitld.jpg",
     "socials": {
       "facebook": "",
@@ -143,9 +190,24 @@
     }
   },
   {
-    "id": 10,
+    "id": 13,
+    "name": "Amao Olujide",
+    "nickname": "Catalyst",
+    "phone": "",
+    "email": "",
+    "position": "",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764867328/IMG-20251202-WA0017_pjxewg.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "id": 14,
     "name": "Ikhalaede Daniel Ohiole",
-    "nickname": "Member",
+    "nickname": "",
     "phone": "",
     "email": "",
     "position": "",
@@ -158,12 +220,12 @@
     }
   },
   {
-    "id": 11,
+    "id": 15,
     "name": "Oriepeigha John Oyinmienbi",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763984618/IMG_3059_kjq1w4.jpg",
     "socials": {
       "facebook": "https://www.facebook.com/share/1BqDmAGXFU/",
@@ -173,9 +235,9 @@
     }
   },
   {
-    "id": 12,
+    "id": 15,
     "name": "Yakubu Mirabel Ochuwa",
-    "nickname": "Member",
+    "nickname": "",
     "phone": "",
     "email": "",
     "position": "",
@@ -188,12 +250,12 @@
     }
   },
   {
-    "id": 13,
+    "id": 16,
     "name": "Anosike Euphemis Nzubechukwu",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763992927/IMG_3061_lgmz2r.jpg",
     "socials": {
       "facebook": "",
@@ -203,12 +265,12 @@
     }
   },
   {
-    "id": 14,
+    "id": 17,
     "name": "Stephen Victory",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921207/IMG_3063_anlqks.jpg",
     "socials": {
       "facebook": "",
@@ -218,7 +280,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 18,
     "name": "Obasi Samuel Uchechukwu",
     "nickname": "",
     "phone": "",
@@ -233,12 +295,12 @@
     }
   },
   {
-    "id": 16,
+    "id": 19,
     "name": "Dede Toritseyemi Emmanuella",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763993600/IMG_3065_uumzaa_2292bb.jpg",
     "socials": {
       "facebook": "https://www.facebook.com/share/1ANDbhEd8z",
@@ -249,12 +311,12 @@
     }
   },
   {
-    "id": 17,
+    "id": 20,
     "name": "Monday Precious Michaels",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763993714/IMG_3066_o0fzvy_9b1e02.jpg",
     "socials": {
       "facebook": "",
@@ -263,28 +325,14 @@
       "linkedin": ""
     }
   },
+
   {
-    "id": 18,
-    "name": "Onuah Favour Hachikaru",
-    "nickname": "",
-    "phone": "",
-    "email": "",
-    "position": "Member",
-    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763993826/IMG_3067_ufpbzi_5b1b02.jpg",
-    "socials": {
-      "facebook": "",
-      "twitter": "",
-      "instagram": "https://www.instagram.com/_hachibabyyy__",
-      "linkedin": ""
-    }
-  },
-  {
-    "id": 19,
+    "id": 21,
     "name": "Pius-Chukwu Favour Ibuchi",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763993986/IMG-20251123-WA0057_mkogsu.jpg",
     "socials": {
       "facebook": "https://www.facebook.com/favour.pius.397",
@@ -294,12 +342,12 @@
     }
   },
   {
-    "id": 20,
+    "id": 22,
     "name": "Ogoh Maranatha Favour",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921203/IMG_3062_fkabaw.jpg",
     "socials": {
       "facebook": "",
@@ -309,12 +357,12 @@
     }
   },
   {
-    "id": 21,
+    "id": 23,
     "name": "Judith Agetu",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1764653019/unnamed_6_vmzc56.png",
     "socials": {
       "facebook": "",
@@ -323,43 +371,14 @@
       "linkedin": "https://www.linkedin.com/in/judithagetu/"
     }
   },
-  {
-    "id": 22,
-    "name": "Amao Olujide",
-    "nickname": "Catalyst",
-    "phone": "",
-    "email": "",
-    "position": "Member",
-    "imageUrl": "",
-    "socials": {
-      "facebook": "",
-      "twitter": "",
-      "instagram": "",
-      "linkedin": ""
-    }
-  },
-  {
-    "id": 23,
-    "name": "Orlu Christian Chukwuma",
-    "nickname": "",
-    "phone": "",
-    "email": "",
-    "position": "Member",
-    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1764652946/IMG-20251201-WA0025_qlmjnp.jpg",
-    "socials": {
-      "facebook": "",
-      "twitter": "",
-      "instagram": "",
-      "linkedin": ""
-    }
-  },
+
   {
     "id": 24,
     "name": "Efenwengbe Destiny",
     "nickname": "",
     "phone": "",
     "email": "",
-    "position": "Member",
+    "position": "",
     "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1764652991/IMG-20251130-WA0056_qbz8ff.jpg",
     "socials": {
       "facebook": "https://www.facebook.com/share/14TpxEydoUn/",

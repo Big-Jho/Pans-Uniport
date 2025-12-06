@@ -22,12 +22,22 @@ function Navbar({ navColor }) {
       >
         <Container>
           <div className="flex flex-row justify-start items-center space-x-6 font-thin">
-            <Link to="/#" className="group inline-block">
+            <a
+              href="https://www.instagram.com/pans.uniport?"
+              rel="noreferrer"
+              target="_blank"
+              className="group inline-block"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </Link>
-            <Link to="/#" className="group inline-block">
+            </a>
+            <a
+              href="https://www.tiktok.com/@pansuniport?"
+              rel="noreferrer"
+              target="_blank"
+              className="group inline-block"
+            >
               <FontAwesomeIcon icon={faTwitter} size="lg" />
-            </Link>
+            </a>
             <Link to="/about" className="group inline-block">
               About
             </Link>

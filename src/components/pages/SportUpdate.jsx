@@ -28,6 +28,11 @@ function SportUpdate() {
                     <h3 className="small-header text-ash/60">
                       {post.category}
                     </h3>
+                    <img
+                      src={post.coverImage}
+                      alt={`cover-image`}
+                      className="w-full"
+                    />
                     <h2 className="text-xl font-light">{post.title}</h2>
                     <p className="text-ash/60">{post.date}</p>
                   </a>

@@ -6,7 +6,7 @@ function Slide2() {
   const swiperSlide = useSwiperSlide();
 
   return (
-    <div className="w-[100vw] h-[calc(100vh-2rem)] bg-slide2 bg-cover bg-center bg-opacity-10 slide-overlay">
+    <div className="w-[100vw] h-[calc(100vh-2rem)] bg-fatimaBg bg-cover bg-center bg-opacity-10 slide-overlay">
       {/* Positioning */}
       {swiperSlide.isActive && (
         <Container className="relative h-full">

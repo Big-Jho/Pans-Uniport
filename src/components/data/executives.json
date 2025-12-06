@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "name": "Ndah Ashimedua Daniel",
+    "nickname": "Danda_ash",
+    "phone": "",
+    "email": "",
+    "position": "President",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932563/1000786671_uklohd_33fb66.jpg",
+    "socials": {
+      "facebook": "https://www.facebook.com/share/1FzyUihBbR/",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/real_danda_ash",
+      "linkedin": "https://www.linkedin.com/in/dndah"
+    }
+  },
+
+  {
+    "id": 2,
+    "name": "Bob Eroh Ejiroghene Mercy",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Vice President",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764933254/PHOTO-2025-12-01-23-13-34_n1bfev.jpg",
+    "socials": {
+      "facebook": "https://www.facebook.com/ejiroghene.mercy.bob.eroh",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/gg_globalgiant/",
+      "linkedin": "https://www.linkedin.com/in/ejiroghene-mercy-bob-eroh-569133249/"
+    }
+  },
+
+  {
+    "id": 7,
+    "name": "Umeh, Chizoba Mitchel",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Secretary-General",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932670/IMG_9889_bzgjmz_983a25.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/realchizobaumeh?",
+      "linkedin": "https://www.linkedin.com/in/chizoba-umeh-27a31b228?trk=contact-info"
+    }
+  },
+
+  {
+    "id": 3,
+    "name": "Ekun Efeeloobari Peace",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Speaker",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932783/IMG_1142_xr1rf1.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/efeeloobari_e",
+      "linkedin": "",
+      "tiktok": ""
+    }
+  },
+  {
+    "id": 4,
+    "name": "Lulu-chukwu Oluebube. F.",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Deputy Speaker",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932618/PHOTO-2025-12-04-21-14-30_se6kwq.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "https://x.com/DeFi_Creed",
+      "instagram": "",
+      "linkedin": "",
+      "tiktok": ""
+    }
+  },
+
+  {
+    "id": 8,
+    "name": "Maduka Samuel Chukwuemeka",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Financial Secretary",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932938/PHOTO-2025-12-01-23-16-43_banckc_775c62.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "https://x.com/Sammyxx_29",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+
+  {
+    "id": 9,
+    "name": "Jeremiah Uchenna",
+    "nickname": "",
+    "phone": "08065245009",
+    "email": "",
+    "position": "Director of Welfare and Health",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764933018/PHOTO-2025-12-01-23-16-11_px4bev.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+
+  {
+    "id": 5,
+    "name": "Ebereri Afure Johnmark",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Provost 1",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932744/PHOTO-2025-12-04-11-50-08_xc07bb_a2aad1.jpg",
+    "socials": {
+      "facebook": "https://www.facebook.com/ebereri.afure.3",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "https://www.linkedin.com/in/ebereri-afure-774852388/?",
+      "tiktok": ""
+    }
+  },
+
+  {
+    "id": 10,
+    "name": "Chekwube Jessica Ekperebuikem ",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Director of Sport",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764933066/PHOTO-2025-12-01-23-15-40_wahbnt_678b41.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/jesssia_xx?",
+      "linkedin": ""
+    }
+  },
+
+  {
+    "id": 6,
+    "name": "Monday Precious Michaels",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Director of Socials",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763993714/IMG_3066_o0fzvy_9b1e02.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+
+  {
+    "id": 12,
+    "name": "Gabriel Testimony Osinachi",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Asst. Sec General",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764933191/PHOTO-2025-12-01-23-14-36_n0rj2p_8ca1c7.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "tiktok": "https://www.tiktok.com/@nneoma.okorafor?",
+      "whatsapp": "https://wa.me/qr/D45VNSAY6QOOD1"
+    }
+  },
+
+  {
+    "id": 11,
+    "name": "Okorafor Nneoma Praise",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Treasurer",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764933134/PHOTO-2025-12-01-23-14-58_gpzgwp_4abecc.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "tiktok": "https://www.tiktok.com/@nneoma.okorafor?"
+    }
+  },
+
+  {
+    "id": 18,
+    "name": "Obasi Samuel Uchechukwu",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Public Relations Officer (PRO)",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1763921208/IMG_3064_o1sohr.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "https://x.com/_IceyHQ?t=_hsFWRijyl3qBdNCK6Dn4Q&s=09",
+      "instagram": "https://www.instagram.com/icey.ks?utm_source=qr&igsh=MWZma2JrdmlrbTdxdg==",
+      "linkedin": ""
+    }
+  },
+
+  {
+    "id": 12,
+    "name": "David Richard Selen",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Assist director of sports",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932833/PHOTO-2025-12-01-23-17-05_gc8xzy.jpg",
+    "socials": {
+      "facebook": "https://www.facebook.com/davis.richard.cypher",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/davisrichardcypher?",
+      "linkedin": "",
+      "tiktok": "",
+      "whatsapp": ""
+    }
+  }
+]

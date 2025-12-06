@@ -4,13 +4,14 @@ const blogPosts = [
     id: 1,
     title: "Anti-Microbial Resistance: A Silent Crisis We Cannot Ignore",
     slug: "december-newsletter",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_280,f_jpg/v1764962366/antimicrobial-resistance_kulxjr.jpg",
     date: "November 25, 2025",
     category: "newsletter",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 6,
+      id: 8,
       name: "Cherrie",
       level: "400Level",
       position: "PANS public health team co-lead",
@@ -185,13 +186,14 @@ const blogPosts = [
     title:
       "A Brutally Honest Guide To Adulting: Review Of “The Subtle Art Of Not Giving A F*Ck” By Mark Manson",
     slug: "a-brutally-honest-guide-to-adulting",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764963529/the-subtle-art_ohjouw.jpg",
     date: "November 25, 2025",
-    category: "blog",
+    category: "Blog",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 12,
+      id: 16,
       name: "Yakubu Mirabel",
       // level: "400Level",
       position: "",
@@ -256,12 +258,6 @@ const blogPosts = [
         element: "p",
         class: "text-base text-ash/60",
         innerContent:
-          "AMR occurs when microorganisms like bacteria, viruses, fungi and parasites stop responding to the medicines designed to kill them, this means that infections that were once very easy to treat becomes harder to treat, takes longer time and sometimes even impossible to cure.",
-      },
-      {
-        element: "p",
-        class: "text-base text-ash/60",
-        innerContent:
           "Mark Manson's book gives a raw, refreshing honesty. He ditches fluff and says, “Life is suffering. Embrace it.” He gives a practical guide on how to handle failure, relationship and anxiety.",
       },
       {
@@ -279,13 +275,14 @@ const blogPosts = [
     title:
       "Self-Medication At Christmas: The Silent Danger We Don’t Talk About",
     slug: "the-silent-danger-we-dont-talk-about",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_280,f_jpg/v1765037187/self-medication_yh31uw.jpg",
     date: "December 3, 2025",
-    category: "Blog",
+    category: "health",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 8,
+      id: 10,
       name: "Onyeadiri Chisimbiri Chinenye",
       level: "",
       position: "",
@@ -448,12 +445,13 @@ const blogPosts = [
 
   // Post 4
   {
-    id: 4,
+    id: 5,
     title: "HIV and Hosts Genome: The Elite Controllers and Rapid Progressors",
     slug: "hiv-and-hosts-genome",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_280,f_jpg/v1765037171/hiv-aids_fkk4nu.jpg",
     date: "November 29, 2025",
-    category: "Blog",
+    category: "health",
     likes: 0,
     dislikes: 0,
     author: {
@@ -575,13 +573,14 @@ const blogPosts = [
     title:
       "How To Survive Pharmacy School: A Veteran Pharmacy Student's Guide To Not Dying ",
     slug: "how-to-survive-pharmacy-school",
-    coverImage: "",
+    coverImage:
+      "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_280,f_jpg/v1765037448/pharmacy-school_uivl61.jpg",
     date: "November 29, 2025",
     category: "Blog",
     likes: 0,
     dislikes: 0,
     author: {
-      id: 11,
+      id: 15,
       name: "Oriepeigha John Oyinmienbi",
       level: "",
       position: "Member",

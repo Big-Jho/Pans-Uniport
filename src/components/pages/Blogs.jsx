@@ -29,6 +29,13 @@ function Blog() {
                     <h3 className="small-header text-ash/60">
                       {blog.category}
                     </h3>
+
+                    <img
+                      src={blog.coverImage}
+                      alt={`cover-image`}
+                      className="w-full"
+                    />
+
                     <h2 className="text-xl font-light">{blog.title}</h2>
                     <p className="text-ash/60">{blog.date}</p>
                   </a>
