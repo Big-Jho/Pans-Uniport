@@ -92,7 +92,7 @@ function Showcase() {
               <p className="font-extralight text-center text-4xl lg:text-3xl xl:text-4xl text-black tracking-wider">
                 Explore Medicine Intelligence
               </p>
-              <Link to="/rx-diary" className="group block ">
+              <Link to="/drug-spotlight" className="group block ">
                 <div className="space-x-2  flex flex-row justify-start items-center ">
                   <p className="text-center text-black font-light tracking-wide">
                     Read More

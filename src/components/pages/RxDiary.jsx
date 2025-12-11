@@ -18,7 +18,7 @@ function RxDiary() {
       <NavCombo navColor="white" />
       <section>
         <Container className="pt-24 md:pt-28 lg:pt-40">
-          <h2 className="big-header text-center">Latest Blogs</h2>
+          <h2 className="big-header text-center">All the Gist</h2>
 
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {rxDiaryPosts.map((post) => (
