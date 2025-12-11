@@ -1,13 +1,14 @@
 import React from "react";
 import Container from "../shared/Container";
 import Tag from "../shared/Tag";
+import { Link } from "react-router-dom";
 
 import ScrollReveal from "../ScrollReveal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import writersExecutives from "../data/writersExecutives.json";
+import leadExecutives from "../data/leadExecutives.json";
 
 function Showcase() {
   return (
@@ -30,8 +31,8 @@ function Showcase() {
               <p className="font-extralight text-4xl lg:text-3xl xl:text-4xl text-white tracking-wider">
                 PANS UNIPORT Executives
               </p>
-              <a
-                href="/pans-executives"
+              <Link
+                to="/pans-executives"
                 className="group block mt-16 md:mt-24 lg:mt-12 xl:mt-24"
               >
                 <div className="space-x-2  flex flex-row justify-start items-center ">
@@ -40,7 +41,7 @@ function Showcase() {
                   </p>
                   <FontAwesomeIcon icon={faArrowRight} className="text-white" />
                 </div>
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
 
@@ -59,8 +60,8 @@ function Showcase() {
               <p className="font-extralight text-4xl lg:text-3xl xl:text-4xl text-black tracking-wider">
                 All the Gist
               </p>
-              <a
-                href="/rx-diary"
+              <Link
+                to="/rx-diary"
                 className="group block mt-16 md:mt-24 lg:mt-14 xl:mt-24"
               >
                 <div className="space-x-2  flex flex-row justify-start items-center ">
@@ -69,7 +70,7 @@ function Showcase() {
                   </p>
                   <FontAwesomeIcon icon={faArrowRight} className="text-black" />
                 </div>
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
         </div>
@@ -81,7 +82,7 @@ function Showcase() {
             type="fromBottom"
             className="bg-medicine bg-cover bg-no-repeat h-fit lg:col-span-2 xl:col-span-1 w-full"
           >
-            <div className="w-full h-full py-20 px-8 bg-white/30 flex flex-col  items-center gap-y-8">
+            <div className="w-full h-full py-10 px-8 bg-white/30 flex flex-col  items-center gap-y-8">
               <Tag
                 bg={`black`}
                 className={`rounded-sm text-sm bg-opacity-80 text-white font-normal `}
@@ -91,37 +92,37 @@ function Showcase() {
               <p className="font-extralight text-center text-4xl lg:text-3xl xl:text-4xl text-black tracking-wider">
                 Explore Medicine Intelligence
               </p>
-              <a href="/rx-diary" className="group block ">
+              <Link to="/rx-diary" className="group block ">
                 <div className="space-x-2  flex flex-row justify-start items-center ">
                   <p className="text-center text-black font-light tracking-wide">
                     Read More
                   </p>
                   <FontAwesomeIcon icon={faArrowRight} className="text-black" />
                 </div>
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
 
           <ScrollReveal
             type={`fromBottom`}
-            className={`col-span-2 grid grid-cols-3 lg:grid-cols-3 gap-x-4 lg:gap-x-8`}
+            className={`col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-4 lg:gap-x-8`}
           >
-            {writersExecutives.map((writer) => (
-              <div className="space-y-2" key={writer.id}>
+            {leadExecutives.map((execcutive) => (
+              <div className="space-y-2 max-w-96 mx-auto" key={execcutive.id}>
                 <div className="relative">
                   <img
-                    src={writer.imageUrl}
-                    alt={`${writer.name} - ${writer.position}`}
+                    src={execcutive.imageUrl}
+                    alt={`${execcutive.name} - ${execcutive.position}`}
                     className="w-full"
                   />
                 </div>
 
                 <div className="-space-y-1">
                   <h4 className="text-black text-center tracking-wide">
-                    {writer.name}
+                    {execcutive.name}
                   </h4>
                   <p className="text-ash text-center tracking-wide opacity-60">
-                    {writer.position}
+                    {execcutive.position}
                   </p>
                 </div>
               </div>

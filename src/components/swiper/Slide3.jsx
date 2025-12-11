@@ -5,22 +5,22 @@ import Container from "../shared/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function Slide2() {
+function Slide1() {
   const swiperSlide = useSwiperSlide();
 
   return (
-    <div className="w-[100vw] h-[calc(100vh-2rem)] bg-fatimaBg bg-cover bg-center bg-opacity-10 slide-overlay">
+    <div className="w-[100vw] h-[calc(100vh-2rem)] bg-messiCup bg-cover bg-center bg-opacity-10 slide-overlay-darker">
       {/* Positioning */}
       {swiperSlide.isActive && (
         <Container className="relative h-full">
-          <div className="position-right hero-swiper-content animate-slideInFromRight opacity-0 h-full">
-            <div className="flex flex-col space-y-4 items-start md:items-end opacity-70">
-              <h1 className="text-3xl md:text-4xl md:text-right lg:text-5xl lg:tracking-wide text-white font-bold">
-                Divers group of Writers
+          <div className="position-left hero-swiper-content animate-slideInFromUnder opacity-0  h-full">
+            <div className="flex flex-col space-y-4 items-start opacity-70">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl lg:tracking-wide text-white font-bold">
+                PANS Sport News
               </h1>
-              <h4 className="small-header text-gray">Rahim fatima</h4>
+              {/* <h4 className="small-header text-gray">OUR NEW EXECUTIVES</h4> */}
               <Link
-                to="/pharm-writers"
+                to="/sport-update"
                 className="flex flex-col items-center justify-center "
               >
                 <div className="space-x-2  flex flex-row justify-start items-center ">
@@ -38,4 +38,4 @@ function Slide2() {
   );
 }
 
-export default Slide2;
+export default Slide1;

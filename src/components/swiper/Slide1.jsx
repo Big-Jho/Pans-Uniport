@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { useSwiperSlide } from "swiper/react";
 import Container from "../shared/Container";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 function Slide1() {
   const swiperSlide = useSwiperSlide();
 
@@ -11,17 +14,21 @@ function Slide1() {
       {swiperSlide.isActive && (
         <Container className="relative h-full">
           <div className="position-left hero-swiper-content animate-slideInFromUnder opacity-0  h-full">
-            <div className="flex flex-col space-y-2 items-start">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl lg:tracking-wide text-white">
+            <div className="flex flex-col space-y-4 items-start opacity-70">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl lg:tracking-wide text-white font-bold">
                 PANS Editorial Team
               </h1>
               <h4 className="small-header text-gray">OUR NEW EXECUTIVES</h4>
               <Link
-                to="/blog"
-                className="flex flex-col items-center justify-center duration-lg"
+                to="/pans-executives"
+                className="flex flex-col items-center justify-center "
               >
-                <h4 className="text-base font-normal text-white">Read Post</h4>
-                <div className="nav-underline h-0.5 w-full bg-white"></div>
+                <div className="space-x-2  flex flex-row justify-start items-center ">
+                  <p className="text-center text-white font-light tracking-wide">
+                    Read Posts
+                  </p>
+                  <FontAwesomeIcon icon={faArrowRight} className="text-white" />
+                </div>
               </Link>
             </div>
           </div>

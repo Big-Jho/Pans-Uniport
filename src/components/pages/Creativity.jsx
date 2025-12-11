@@ -22,12 +22,17 @@ function Creativity() {
 
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {creativityPosts.map((post) => (
-              <ScrollReveal type="fromBottom">
+              <ScrollReveal type="fromBottom" key={post.id}>
                 <Card>
                   <a className="space-y-4" href={`/creativity/${post.slug}`}>
                     <h3 className="small-header text-ash/60">
                       {post.category}
                     </h3>
+                    <img
+                      src={post.coverImage}
+                      alt={`cover-image`}
+                      className="w-full"
+                    />
                     <h2 className="text-xl font-light">{post.title}</h2>
                     <p className="text-ash/60">{post.date}</p>
                   </a>

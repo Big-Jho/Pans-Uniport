@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import substackPng from "../../assets/images/substack.png";
 import ScrollReveal from "../ScrollReveal";
 
 function Footer() {
@@ -78,14 +79,38 @@ function Footer() {
               <div className="flex flex-col items-center w-1/2">
                 <div className="flex flex-row justify-end">
                   <div>
-                    <h4 className="small-header text-ash pb-4">Follow us</h4>
-                    <div className="bg-white flex flex-row justify-center items-center space-x-6">
-                      <Link to="/about" className="group inline-block">
+                    <h4 className="small-header text-ash pb-4 text-center">
+                      Follow us
+                    </h4>
+                    <div className="bg-white flex flex-row justify-center items-center gap-x-6">
+                      <a
+                        href="https://www.instagram.com/pans.uniport?"
+                        rel="noreferrer"
+                        target="_blank"
+                        className="group inline-block"
+                      >
                         <FontAwesomeIcon icon={faInstagram} size="lg" />
-                      </Link>
-                      <Link to="/about" className="group inline-block">
+                      </a>
+                      <a
+                        href="https://www.tiktok.com/@pansuniport?"
+                        rel="noreferrer"
+                        target="_blank"
+                        className="group inline-block"
+                      >
                         <FontAwesomeIcon icon={faTwitter} size="lg" />
-                      </Link>
+                      </a>
+                      <a
+                        href="https://substack.com/@pansuniporteditorialteam"
+                        rel="noreferrer"
+                        target="_blank"
+                        className="group inline-block"
+                      >
+                        <img
+                          src={substackPng}
+                          alt="subtrack logo"
+                          className="w-7 invert"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>

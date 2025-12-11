@@ -12,6 +12,8 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // IMPORTING ALL SWIPER-SLIDES
 import Slide1 from "./Slide1";
 import Slide2 from "./Slide2";
+import Slide3 from "./Slide3";
+// import Slide4 from "./Slide4";
 
 // Import Swiper styles
 import "swiper/css";
@@ -74,11 +76,11 @@ function HeroSwiper() {
           <Slide2 />
         </SwiperSlide>
         <SwiperSlide className="w-screen">
-          <Slide1 />
+          <Slide3 />
         </SwiperSlide>
-        <SwiperSlide className="w-screen">
-          <Slide1 />
-        </SwiperSlide>
+        {/* <SwiperSlide className="w-screen">
+          <Slide4 />
+        </SwiperSlide> */}
         <div className="hidden md:block">
           <SwiperNavigation />
         </div>

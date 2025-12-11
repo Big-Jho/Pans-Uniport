@@ -32,7 +32,7 @@
   },
 
   {
-    "id": 7,
+    "id": 3,
     "name": "Umeh, Chizoba Mitchel",
     "nickname": "",
     "phone": "",
@@ -48,7 +48,7 @@
   },
 
   {
-    "id": 3,
+    "id": 4,
     "name": "Ekun Efeeloobari Peace",
     "nickname": "",
     "phone": "",
@@ -64,7 +64,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Lulu-chukwu Oluebube. F.",
     "nickname": "",
     "phone": "",
@@ -81,7 +81,7 @@
   },
 
   {
-    "id": 8,
+    "id": 6,
     "name": "Maduka Samuel Chukwuemeka",
     "nickname": "",
     "phone": "",
@@ -97,7 +97,7 @@
   },
 
   {
-    "id": 9,
+    "id": 7,
     "name": "Jeremiah Uchenna",
     "nickname": "",
     "phone": "08065245009",
@@ -113,7 +113,7 @@
   },
 
   {
-    "id": 5,
+    "id": 8,
     "name": "Ebereri Afure Johnmark",
     "nickname": "",
     "phone": "",
@@ -130,7 +130,7 @@
   },
 
   {
-    "id": 10,
+    "id": 9,
     "name": "Chekwube Jessica Ekperebuikem ",
     "nickname": "",
     "phone": "",
@@ -146,7 +146,7 @@
   },
 
   {
-    "id": 6,
+    "id": 10,
     "name": "Monday Precious Michaels",
     "nickname": "",
     "phone": "",
@@ -162,7 +162,7 @@
   },
 
   {
-    "id": 12,
+    "id": 11,
     "name": "Gabriel Testimony Osinachi",
     "nickname": "",
     "phone": "",
@@ -180,7 +180,7 @@
   },
 
   {
-    "id": 11,
+    "id": 12,
     "name": "Okorafor Nneoma Praise",
     "nickname": "",
     "phone": "",
@@ -197,7 +197,7 @@
   },
 
   {
-    "id": 18,
+    "id": 13,
     "name": "Obasi Samuel Uchechukwu",
     "nickname": "",
     "phone": "",
@@ -213,7 +213,7 @@
   },
 
   {
-    "id": 12,
+    "id": 14,
     "name": "David Richard Selen",
     "nickname": "",
     "phone": "",
@@ -226,6 +226,23 @@
       "instagram": "https://www.instagram.com/davisrichardcypher?",
       "linkedin": "",
       "tiktok": "",
+      "whatsapp": ""
+    }
+  },
+  {
+    "id": 15,
+    "name": "Monday Waaka Benedicta",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Provost 2",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/c_fill,w_500,h_500,f_jpg/v1765210633/IMG_3140_jqeayt_f5c07a.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "tiktok": "https://www.tiktok.com/@bbywaaka2?",
       "whatsapp": ""
     }
   }

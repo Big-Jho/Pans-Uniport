@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
+import substackPng from "../../assets/images/substack.png";
+
 function Navbar({ navColor }) {
   const { menuVisibility, toggleMenu, scrolled } =
     useContext(NavigationContext);
@@ -38,6 +40,14 @@ function Navbar({ navColor }) {
             >
               <FontAwesomeIcon icon={faTwitter} size="lg" />
             </a>
+            <a
+              href="https://substack.com/@pansuniporteditorialteam"
+              rel="noreferrer"
+              target="_blank"
+              className="group inline-block"
+            >
+              <img src={substackPng} alt="subtrack logo" className="w-7" />
+            </a>
             <Link to="/about" className="group inline-block">
               About
             </Link>
@@ -51,6 +61,7 @@ function Navbar({ navColor }) {
         </Container>
       </section>
 
+      {/* Main Menu */}
       <section
         className={`w-full ${
           scrolled || navColor === "white"
@@ -59,7 +70,7 @@ function Navbar({ navColor }) {
         }`}
       >
         <Container className="py-0 pt-2">
-          <div className="grid grid-cols-11 justify-center  items-center">
+          <div className="grid grid-cols-12 justify-center  py-3 items-center">
             {/* Hamburger */}
             <div className="lg:hidden col-span-1">
               <FontAwesomeIcon
@@ -105,15 +116,21 @@ function Navbar({ navColor }) {
             </div>
 
             {/* Home  - Logo */}
-            <div className="col-span-9 lg:col-span-1">
+            <div className="col-span-10 lg:col-span-2">
               <Link to="/" className="mx-auto ">
-                <img
-                  src={PansLogo}
-                  alt="PANS-logo"
-                  className={`mx-auto w-[50px] md:w-[50px] ${
-                    scrolled && "w-[30px]"
-                  }`}
-                />
+                <div className="flex flex-row justify-center items-center gap-1">
+                  <img src={PansLogo} alt="PANS-logo" className={`w-10`} />
+                  <span
+                    className={`text-2xl font-bold pt-2 ${
+                      scrolled || navColor === "white"
+                        ? "text-primary"
+                        : "text-white"
+                    }`}
+                    style={{ fontFamily: ["Myriad Pro", "sans-serif"] }}
+                  >
+                    UNIPORT
+                  </span>
+                </div>
               </Link>
             </div>
 

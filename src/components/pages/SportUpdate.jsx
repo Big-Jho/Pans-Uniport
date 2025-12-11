@@ -22,7 +22,7 @@ function SportUpdate() {
 
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {sportUpdatePosts.map((post) => (
-              <ScrollReveal type="fromBottom">
+              <ScrollReveal type="fromBottom" key={post.id}>
                 <Card>
                   <a className="space-y-4" href={`/sport-update/${post.slug}`}>
                     <h3 className="small-header text-ash/60">

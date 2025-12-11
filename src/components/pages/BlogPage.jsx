@@ -13,9 +13,20 @@ import blogPosts from "../data/blogPosts";
 import writers from "../data/writers.json";
 import { ReactComponent as HeartIcon } from "../../assets/images/heart-regular-full.svg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCopy } from "@fortawesome/free-solid-svg-icons";
+
 function BlogPage() {
   const navigate = useNavigate();
   const { slug } = useParams();
+
+  const url = window.location.href;
 
   const [firebasePost, setFirebasePost] = useState(null);
   const [userReaction, setUserReaction] = useState(null);
@@ -151,18 +162,102 @@ function BlogPage() {
                 );
               })}
             </div>
+          </div>
+        </Container>
+      </section>
 
-            {/* LIKE / DISLIKE */}
-            <div className="flex justify-center gap-6 my-10">
+      {/* LIKE / DISLIKE */}
+      <section className={`border-t border-gray`}>
+        <Container>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-8 my-10">
+            <span className="text-xl text-ash">Like & Share</span>
+            <div className="flex justify-center items-center gap-4 md:gap-8">
               <button
                 onClick={() => handleReact("like")}
-                className={`text-lg transition flex flex-row justify-center ${
+                className={`text-xl transition flex flex-row justify-center items-center hover:text-ash text-ash/60 group ${
                   userReaction === "like" ? "text-green-600" : "text-gray-700"
                 }`}
               >
-                <HeartIcon className="w-6 h-6 pt-1 text-black mr-1 inline" />
+                <HeartIcon className="w-6 h-6 md:w-7 md:h-7 pt-0 opacity-60 group-hover:opacity-100 mr-1 inline" />
 
                 {firestoreData.likes ?? 0}
+              </button>
+
+              <a
+                href={`https://wa.me/?text=${encodeURIComponent(url)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2  rounded-lg"
+              >
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  size="xl"
+                  className="hover:text-ash text-ash/60 transition"
+                />
+              </a>
+
+              {/* Twitter */}
+              <a
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                  url
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" py-2 text-black rounded-lg "
+              >
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  size="xl"
+                  className="transition hover:text-ash text-ash/60"
+                />
+              </a>
+
+              {/* Facebook */}
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                  url
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 rounded-lg"
+              >
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  size="xl"
+                  className="transition hover:text-ash text-ash/60"
+                />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                  url
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 rounded-lg"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  color="black"
+                  size="xl"
+                  className="transition hover:text-ash text-ash/60"
+                />
+              </a>
+
+              {/* Copy Link */}
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(url);
+                  alert("Link copied!");
+                }}
+                className="py-2 rounded-lg"
+              >
+                <FontAwesomeIcon
+                  icon={faCopy}
+                  size="lg"
+                  className="transition hover:text-ash text-ash/60"
+                />
               </button>
             </div>
           </div>

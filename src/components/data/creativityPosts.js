@@ -10,7 +10,7 @@ const creativityPosts = [
     likes: 0,
     dislikes: 0,
     author: {
-      id: 9,
+      id: 12,
       name: "Oreze Kenneth James",
       level: "400Level",
       position: "PANS public health team co-lead",

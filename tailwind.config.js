@@ -29,10 +29,10 @@ module.exports = {
 
       animation: {
         fadeIn: "fadeIn 1s ease-out forwards 0.5s",
-        slideInFromRight: "slideInFromRight 0.7s ease-out forwards 0.5s",
-        slideInFromUnder: "slideInFromUnder 0.7s ease-out forwards 0.5s",
-        slideInFromLeft: "slideInFromLeft 0.7s ease-out forwards 0.5s",
-        slideInFromTop: "slideInFromTop 0.7s ease-out forwards 0.5s",
+        slideInFromRight: "slideInFromRight 0.5s ease-out forwards 0.3s",
+        slideInFromUnder: "slideInFromUnder 0.5s ease-out forwards 0.3s",
+        slideInFromLeft: "slideInFromLeft 0.5s ease-out forwards 0.3s",
+        slideInFromTop: "slideInFromTop 0.5s ease-out forwards 0.3s",
       },
 
       height: {
@@ -49,6 +49,7 @@ module.exports = {
       colors: {
         ash: "#333",
         gray: "#e5e7eb",
+        primary: "#07058b",
       },
 
       backgroundImage: {
@@ -61,6 +62,7 @@ module.exports = {
         conference: "url('./assets/images/conference-room.jpeg')",
         gist: "url('./assets/images/gist.jpeg')",
         medicine: "url('./assets/images/medicine.jpeg')",
+        messiCup: "url('./assets/images/messi-cup.jpeg')",
       },
     },
   },

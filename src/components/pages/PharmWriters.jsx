@@ -36,7 +36,7 @@ function PharmWriters() {
           <ScrollReveal type="fromBottom">
             <div className="flex flex-col justify-center my-20 items-center md:items-end mt-56">
               <div className="max-w-[25rem]">
-                <Tag bg="white" rounded>
+                <Tag bg="white" className={`rounded-md`}>
                   Recruitment
                 </Tag>
                 <h2 className="text-4xl md:text-5xl text-white mt-4 md:mt-6 -px-2">

@@ -22,7 +22,7 @@ function DrugSpotlight() {
 
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {drugSpotlightPosts.map((post) => (
-              <ScrollReveal type="fromBottom">
+              <ScrollReveal type="fromBottom" key={post.id}>
                 <Card>
                   <a
                     className="space-y-4"
