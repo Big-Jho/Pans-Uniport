@@ -16,7 +16,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import substackPng from "../../assets/images/substack.png";
 
-import TeamPicture from "../../assets/images/group.jpeg";
+// import TeamPicture from "../../assets/images/group.jpeg";
+import EditorialBoard from "../../assets/images/editorial-board.jpg";
 import writersExecutives from "../data/writersExecutives.json";
 
 function About() {
@@ -83,7 +84,7 @@ function About() {
         <Container>
           <ScrollReveal type="fromBottom">
             <img
-              src={TeamPicture}
+              src={EditorialBoard}
               alt="Editorial Team Pics"
               className="w-full"
             />
