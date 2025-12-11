@@ -106,8 +106,7 @@ function RxDiaryPage() {
                 <p className="text-ash/60 text-center">
                   By{" "}
                   <span className="text-black">
-                    {writers[post.author.id - 1]?.nickname ||
-                      writers[post.author.id - 1]?.name}
+                    {writers[post.author.id - 1]?.name}
                   </span>{" "}
                   on {post.date}
                 </p>

@@ -7,7 +7,11 @@ import NavLinks from "../NavLinks";
 import PansLogo from "../../assets/images/pans-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faTiktok,
+  // faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 import substackPng from "../../assets/images/substack.png";
 
@@ -38,7 +42,7 @@ function Navbar({ navColor }) {
               target="_blank"
               className="group inline-block"
             >
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
+              <FontAwesomeIcon icon={faTiktok} size="lg" />
             </a>
             <a
               href="https://substack.com/@pansuniporteditorialteam"
