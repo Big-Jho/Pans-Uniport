@@ -105,7 +105,7 @@ function Showcase() {
 
           <ScrollReveal
             type={`fromBottom`}
-            className={`col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-4 lg:gap-x-8`}
+            className={`col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-8 lg:gap-x-8`}
           >
             {leadExecutives.map((execcutive) => (
               <div className="space-y-2 max-w-96 mx-auto" key={execcutive.id}>
