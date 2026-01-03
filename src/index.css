@@ -8,6 +8,40 @@
   --swiper-pagination-bullet-inactive-opacity: 0.5;
 }
 
+/* UTILITY CLASSES */
+.transition-slow {
+  @apply transition-all duration-500;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  @apply relative w-[24px]  h-[24px];
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  @apply absolute top-[4px] left-0 right-0 w-[24px] h-[3px] rounded-sm;
+}
+
+.hamburger-middle {
+  @apply top-[12px];
+}
+
+.hamburger-bottom {
+  @apply top-[20px];
+}
+
+.open .hamburger-top {
+  @apply rotate-[45deg] translate-y-[8px];
+}
+.open .hamburger-bottom {
+  @apply -rotate-[45deg] -translate-y-[8px];
+}
+.open .hamburger-middle {
+  @apply opacity-0;
+}
+
 html {
   scroll-behavior: smooth;
 }

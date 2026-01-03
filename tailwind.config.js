@@ -29,10 +29,10 @@ module.exports = {
 
       animation: {
         fadeIn: "fadeIn 1s ease-out forwards 0.5s",
-        slideInFromRight: "slideInFromRight 0.5s ease-out forwards 0.3s",
-        slideInFromUnder: "slideInFromUnder 0.5s ease-out forwards 0.3s",
-        slideInFromLeft: "slideInFromLeft 0.5s ease-out forwards 0.3s",
-        slideInFromTop: "slideInFromTop 0.5s ease-out forwards 0.3s",
+        slideInFromRight: "slideInFromRight 0.3s ease-out forwards 0.1s",
+        slideInFromUnder: "slideInFromUnder 0.3s ease-out forwards 0.1s",
+        slideInFromLeft: "slideInFromLeft 0.3s ease-out forwards 0.1s",
+        slideInFromTop: "slideInFromTop 0.3s ease-out forwards 0.1s",
       },
 
       height: {

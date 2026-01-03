@@ -6,18 +6,14 @@ import Container from "../shared/Container";
 import NavLinks from "../NavLinks";
 import PansLogo from "../../assets/images/pans-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import {
-  faInstagram,
-  faTiktok,
-  // faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import Hamburger from "./Hamburger";
 
+// Importing Social Icons
+import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import substackPng from "../../assets/images/substack.png";
 
 function Navbar({ navColor }) {
-  const { menuVisibility, toggleMenu, scrolled } =
-    useContext(NavigationContext);
+  const { scrolled } = useContext(NavigationContext);
 
   return (
     <>
@@ -76,16 +72,7 @@ function Navbar({ navColor }) {
         <Container className="py-0 pt-2">
           <div className="grid grid-cols-12 justify-center  py-3 items-center">
             {/* Hamburger */}
-            <div className="lg:hidden col-span-1">
-              <FontAwesomeIcon
-                icon={menuVisibility ? faXmark : faBars}
-                size="xl"
-                onClick={toggleMenu}
-                className={`active:rotate-90 transition duration-sm ${
-                  scrolled || navColor === "white" ? "text-black" : "text-white"
-                }`}
-              />
-            </div>
+            <Hamburger navColor={navColor} />
 
             {/* First Menu Links */}
             <div className="hidden lg:flex flex-row gap-x-8 justify-start items-center col-span-5">

@@ -1,98 +1,120 @@
 import { useContext } from "react";
 import NavigationContext from "../../context/NavigationContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Container from "../shared/Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
-function MobileMenu() {
-  const { menuVisibility, toggleMenu } = useContext(NavigationContext);
+function MobileMenu({ navColor }) {
+  const { menuVisibility, toggleMenu, scrolled } =
+    useContext(NavigationContext);
 
   return (
     <div
-      className={`absolute top-0 right-0 left-0 bg-white  bg-opacity-10 w-full min-h-[100vh] lg:hidden duration-500 transition-all delay-150 ${
-        menuVisibility ? "translate-x-0" : "-translate-x-full"
-      }`}
+      className={` px-4 container mx-auto mt-4 relative  lg:hidden duration-100 transition-all rounded-lg  ${
+        menuVisibility ? "block" : "hidden"
+      } ${scrolled || navColor === "white" ? "text-white" : "text-primary"}`}
     >
-      <div className={`bg-white h-full max-w-sm  shadow-xl`}>
-        <Container className="relative">
-          {/* Hamburger in MobileMenu */}
-          <div className="absolute top-6 right-6 rounded-full  bg-ash text-center">
-            <div className="w-8 h-8 flex justify-center items-center text-center hover:rotate-90 transition duration-sm text-white">
-              <FontAwesomeIcon
-                icon={faXmark}
-                onClick={toggleMenu}
-                className=" active:rotate-90 transition duration-sm text-white"
-              />
-            </div>
-          </div>
+      <div
+        className={`shadow-xl p-6 container flex flex-col  items-center justify-center gap-4 rounded-lg ${
+          scrolled || navColor === "white" ? "bg-primary" : "bg-white"
+        }`}
+      >
+        {/* blogs */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/blogs"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          Blogs
+        </Link>
 
-          <div className="flex flex-col  items-center gap-5 -pl-4 my-12 min-h-screen">
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/about"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              About Us
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/blogs"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Blogs
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/pharm-writers"
-              className="flex flex-row w-[80%]  p-3 px-6  uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              PharmWriters
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/rx-diary"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Rx Diary
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/sport-update"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Sport Update
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/drug-spotlight"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Drug Spotlight
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/creativity"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Creativity
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/interviews"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Interviews
-            </Link>
-            <Link
-              onClick={() => toggleMenu(false)}
-              to="/contact"
-              className="flex flex-row w-[80%]  p-3 px-6   uppercase   hover:-translate-y-0.5 shadow-md rounded-md duration-300 bg-gray/20 hover:bg-gray/70"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </Container>
+        {/* rx-diary */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/rx-diary"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          Rx Diary
+        </Link>
+
+        {/* Creativity */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/creativity"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          Creativity
+        </Link>
+
+        {/* Intervies */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/interviews"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          Interviews
+        </Link>
+
+        {/* Sport Update */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/sport-update"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          Sport Update
+        </Link>
+
+        {/* Pharmwriters */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/pharm-writers"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          PharmWriters
+        </Link>
+
+        {/* Drug spotlight */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/drug-spotlight"
+          className="hover:-translate-y-0.5 duration-300 text-center font-semibold"
+        >
+          Drug Spotlight
+        </Link>
+
+        {/* Horizontal rule */}
+        <div
+          class={`w-full h-0.5 ${
+            scrolled || navColor === "white" ? "bg-white" : "bg-primary"
+          }`}
+        ></div>
+
+        {/* Buttons below */}
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/about"
+          className={`${
+            scrolled || navColor === "white"
+              ? "bg-white text-primary"
+              : "bg-primary text-white"
+          } w-full rounded-full px-6 py-3  flex items-center justify-center gap-x-4  duration-300 text-center hover:bg-opacity-60`}
+        >
+          <FontAwesomeIcon icon={faUserGroup} />
+          <span>About Us</span>
+        </Link>
+
+        <Link
+          onClick={() => toggleMenu(false)}
+          to="/contact"
+          className={`${
+            scrolled || navColor === "white"
+              ? "bg-white text-primary"
+              : "bg-primary text-white"
+          } w-full rounded-full  px-6 py-3 flex items-center justify-center gap-x-4  duration-300 text-center hover:bg-opacity-60`}
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+          <span>Contact Us</span>
+        </Link>
       </div>
     </div>
   );

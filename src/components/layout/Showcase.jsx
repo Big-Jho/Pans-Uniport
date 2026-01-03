@@ -103,12 +103,16 @@ function Showcase() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal
+          <div
             type={`fromBottom`}
-            className={`col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-8 lg:gap-x-8`}
+            className={`col-span-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-4 gap-y-8 lg:gap-x-8`}
           >
             {leadExecutives.map((execcutive) => (
-              <div className="space-y-2 max-w-96 mx-auto" key={execcutive.id}>
+              <ScrollReveal
+                type={"fromBottom"}
+                className="space-y-2 max-w-96 mx-auto"
+                key={execcutive.id}
+              >
                 <div className="relative">
                   <img
                     src={execcutive.imageUrl}
@@ -125,9 +129,9 @@ function Showcase() {
                     {execcutive.position}
                   </p>
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
-          </ScrollReveal>
+          </div>
         </div>
       </Container>
     </section>

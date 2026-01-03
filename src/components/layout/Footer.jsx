@@ -4,7 +4,7 @@ import NavLinks from "../NavLinks";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import substackPng from "../../assets/images/substack.png";
 import ScrollReveal from "../ScrollReveal";
 
@@ -97,7 +97,7 @@ function Footer() {
                         target="_blank"
                         className="group inline-block"
                       >
-                        <FontAwesomeIcon icon={faTwitter} size="lg" />
+                        <FontAwesomeIcon icon={faTiktok} size="lg" />
                       </a>
                       <a
                         href="https://substack.com/@pansuniporteditorialteam"
