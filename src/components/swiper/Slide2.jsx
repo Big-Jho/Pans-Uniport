@@ -16,7 +16,7 @@ function Slide2() {
           <div className="position-right hero-swiper-content animate-slideInFromRight opacity-0 h-full">
             <div className="flex flex-col space-y-4 items-start md:items-end opacity-70">
               <h1 className="text-3xl md:text-4xl md:text-right lg:text-5xl lg:tracking-wide text-white font-bold">
-                Divers group of Writers
+                Diverse group of Writers
               </h1>
               <h4 className="small-header text-gray">Rahim fatima</h4>
               <Link
