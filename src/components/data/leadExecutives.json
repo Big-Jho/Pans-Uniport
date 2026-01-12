@@ -45,5 +45,21 @@
       "instagram": "https://www.instagram.com/realchizobaumeh?",
       "linkedin": "https://www.linkedin.com/in/chizoba-umeh-27a31b228?trk=contact-info"
     }
+  }, 
+  {
+    "id": 4,
+    "name": "Ekun Efeeloobari Peace",
+    "nickname": "",
+    "phone": "",
+    "email": "",
+    "position": "Speaker",
+    "imageUrl": "https://res.cloudinary.com/djn8ilhlu/image/upload/v1764932783/IMG_1142_xr1rf1.jpg",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "https://www.instagram.com/efeeloobari_e",
+      "linkedin": "",
+      "tiktok": ""
+    }
   }
 ]
